@@ -1,5 +1,0 @@
-# Timeout API
-
-[TOC]
-
-## alksödfjaslödkfj
