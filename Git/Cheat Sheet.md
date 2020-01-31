@@ -10,11 +10,23 @@
 
 ## Configuration
 
-`git config --global user.name "Max Mustermann"`
-`git config --global user.email "musterman@musterdomain.com"`
-`git config --global credential.helper osxkeychain`
-`git config --global core.editor "nano -w"`
-`git config --global alias.glog "log --oneline --graph --decorate"`
+#### `git config`
+
+- shorthand to edit config file in either ??? if local or ??? if global
+
+- `--edit` opens config file ??
+
+- `--global`, `--local`, `--system` ???
+
+
+
+```bash
+git config --global user.name "Max Mustermann"
+git config --global user.email "musterman@musterdomain.com"
+git config --global credential.helper osxkeychain
+git config --global core.editor "nano -w"
+git config --global alias.glog "log --oneline --graph --decorate"
+```
 
 
 
@@ -55,9 +67,9 @@
 #### `git diff`
 
 - show changes between working area and staging area, any uncommitted changes since the last commit
-- can be files, commits, tags, branches
-
-- using `--staged`  show changes between staging area and most recent commit
+- can select specific files, commits, tags, branches
+- `--staged` shows changes between staging area and most recent commit
+- `--cached` shows changes between staging area and most recent commit ????
 
 #### `git log`
 
@@ -75,7 +87,7 @@
 #### `git add`
 
 - adds changes in the working directory to the staging area
-- can be files or folders
+- can be specific files or folders
 - can use wildcards, e.g. `.` for all
 - `--all` all changed files in repo (?)
 - if wants to update already staged changes, just re add again, previous not yet committed stages will stay as unreferenced blobs, will eventually be garbage collected
@@ -84,7 +96,7 @@
 
 - undo staging or commit
 - option `soft`: only moves the HEAD pointer to <commit>, keeps staging and working area untouched, doesn’t delete blobs and trees, can still find via `reflog`, ready to commit again
-- option `mixed`: moves the HEAD pointer to <commit> and updates staging area with <commit>, keeps working area untouched, doesn’t delete blobs and trees, can still find via `reflog`, ready to stage again
+- option `mixed`: (default ?!) moves the HEAD pointer to <commit> and updates staging area with <commit>, keeps working area untouched, doesn’t delete blobs and trees, can still find via `reflog`, ready to stage again
 - option `hard`: moves the HEAD pointer to <commit> and updates staging and working area with <commit>, doesn’t delete blobs and trees, can still find via `reflog`, ready to start over again
 - not working directory safe, could loose data if working directory has unstaged changes and is reset because there exists no blobs and trees yet, but danger only in case of `hard` option
 - ?? `HEAD -- <file>` deletes recent commit ? reverts most recent commit
@@ -103,7 +115,7 @@
 - needs to provide description, multi-line possible
 - `-m "Descriptive message“` inline message
 - `-a` commit all changes of already tracked files without need to stage
-- `--ammend` add to previous commit instead of new commit, but if already pushed commit, will fail to push amended because it now diverges, actually creates new commit but references same parent commit, with no pointer pointing to previous commit it will eventually be garbage collected
+- `--amend` add to previous commit instead of new commit, actually creates new commit but references same parent commit, with no pointer pointing to previous commit it will eventually be garbage collected, but if already pushed commit, beware: if already pushed previous commit, will fail to push amended commit because the commit history now diverges
 
 
 
@@ -113,18 +125,16 @@
 
 - list all local branches
 - `-a` list all remote branches
-
-#### `git branch <branch>`
-
-- create new branch
-- `-m` rename current branch
+- `<branch>` create new branch
+- `<branch> -m` rename current branch ??
 
 #### `git checkout <branch>`
 
 - switch branches
 - updates working directory and staging area (?) with files from last commit in branch
 - `-b` shorthand to create branch and switch to it
-  // do workflow (within all branches)
+
+// do workflow (within all branches)
 
 #### `git checkout master`
 
@@ -142,11 +152,13 @@
 - if 3-way merge, needs to make a merge commit, can avoid by rebasing then fast-forward merge
   (git push origin master)
 
-#### `branch --merged` (?)
+#### `git branch --merged` (?)
 
 #### `git branch -d <branch>`
 
-- only works if there are no unmerged changes, safe
+- deletes branch ??? deletes only pointer
+
+- only works if there are no unmerged changes, is safe
 - doesn’t delete remote copy of branch
 
 #### `git push origin --delete <branch>` ??????
@@ -177,16 +189,19 @@
 #### `git fetch <remote>`
 
 - fetches changes from remote repository into local repository
-- doesn’t merge the changes into local repository
+- doesn’t merge the changes into local repository, needs to manually merge `<remote>/master` into `master`
+- `<branch>` to fetch only for specific branch
 
 #### `git pull <remote> <branch>`
 
-- fetch & merge combined, shortcut
+- fetch & merge combined, shorthand
 - merges the changes into local repository, potential conflicts
-- `--rebase` does fetch & rebase instead
-  // workflow (within a branch)
+
+// workflow (within a branch)
 
 #### `git push <remote> <branch>`
+
+- pushes `<branch>` to `<remote>`, creates it if doesn't exist there yet
 
 - `-u origin <branch>` to use push alone later (?)
 - works only if its a fast-forward merge, i.e. it does not do merges on the server, must be done locally by pulling before
