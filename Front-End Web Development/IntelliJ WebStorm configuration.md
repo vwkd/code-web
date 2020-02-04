@@ -60,3 +60,9 @@ $END
 
 - presentation assistant
 - Material Theme UI
+
+
+
+## Tools
+
+- disable Opera and IE browsers
