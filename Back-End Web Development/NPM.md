@@ -31,29 +31,18 @@
 
 ### `package.json`
 
-- contains package meta data as objects:
-	name, version, main, dependencies, author, repository, bugs, license etc.
-- can create interactively using
-npm init
-- package name must be unique in unscoped package
+- contains package meta data as objects, e.g.	name, version, main, dependencies, author, repository, bugs, license etc.
+- can create interactively using `npm init`
 
-### `index.js`
+#### `name`
 
-- default ???
-- can be specified in `main` attribute in `package.json`
-- 
-'use strict';
+- must be URL-safe characters, all lower-case, not start with underscore or dot
+- must be unique in npm registry if package is unscoped
+- short but descriptive
 
-/* ... */
+#### `version`
 
-module.exports = func1;
-
-
-adds dependencies automatically when installing packages in folder ?????
-
-### Semver (Semantic versioning)
-
-- version naming system
+- follows semver (semantiv versioning) system
 
 | Release | Rule | Meaning |
 | ———- | —— | ————- |
@@ -61,10 +50,22 @@ adds dependencies automatically when installing packages in folder ?????
 | Minor | ^1.x.y | new features, backward compatible |
 | Major | x.y.z | changes that break backward compatibility |
 
-- can also specify ranges, see [semver.org]
-- package versions are named according to Semver
-- no guarantee that packages adhere to Semver convention, i.e. dependencies could break any moment
+- on installation later can also specify ranges, see [semver.org]
+- changes to the package should come with changes to the version
+- no guarantee that other packages adhere to Semver convention, i.e. a dependency of your package could introduce a non-backward compatible change and break your package at any moment
 
+### `index.js`
+
+- default ???
+- can be specified in `main` attribute in `package.json`
+-
+```javascript
+'use strict';
+
+/* ... */
+
+module.exports = func1;
+```
 
 ### Set version number
 
