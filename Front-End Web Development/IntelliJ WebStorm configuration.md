@@ -17,7 +17,7 @@
 ### General
 
 - Disable _Enable Drag'n'Drop functionality in editor_
-
+- Disable background color for markup tags in `Editor > Color Scheme > Language Detection > Markup > Tag > Background`
 
 
 ### Inspections
@@ -59,8 +59,6 @@ $END
 ## Plugins
 
 - presentation assistant
-- Material Theme UI
-
 
 
 ## Tools
