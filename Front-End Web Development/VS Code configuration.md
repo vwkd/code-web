@@ -3,6 +3,7 @@
 ## Setup
 
 - Activate Command line integration
+- Install Fira Code font, activate font ligatures
 
 
 ## Settings
@@ -15,17 +16,37 @@
 - Enable _Cursor Smooth Caret Animation_.
 - Set _Auto Safe_ to _afterDelay_.
 - Disable _Minimap_.
+- Set _Tab Completion_ to _on_.
 
 ### Workbench
 
 - Disable _Activity Bar: Visible_
 - Disable _Breadcrumbs_
 - Disable _Zen Mode: Center Layout_
+- Disable _Editor: Enable Preview_
 
 ### Window
 
 - Enable _Auto Detect Color Scheme_
 
+
+## Interface settings
+
+- Disable _Open Editors_, _Outline_ and _NPM Scripts_ in Explorer view.
+
+
+## Custom settings
+
+Add the following to `settings.json`.
+
+- Enable autocomplete suggestions in Markdown
+
+```json
+    "[markdown]": {
+        "editor.quickSuggestions": true
+      }
+    }
+```
 
 ## Keyboard shortcuts
 
