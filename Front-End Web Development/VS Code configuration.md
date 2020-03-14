@@ -3,7 +3,7 @@
 ## Setup
 
 - Activate Command line integration
-- Install Fira Code font, activate font ligatures
+- Install JetBrains Mono and Fira Code font, activate font ligatures
 
 
 ## Settings
@@ -17,6 +17,7 @@
 - Set _Auto Safe_ to _afterDelay_.
 - Disable _Minimap_.
 - Set _Tab Completion_ to _on_.
+- Disable _Lightbulb_.
 
 ### Workbench
 
@@ -48,10 +49,21 @@ Add the following to `settings.json`.
     }
 ```
 
+
 ## Keyboard shortcuts
 
 - Set _Toggle Block Comments_ to CMD + ALT + /
+- Set _Reset Zoom_ to CMD + SHIFT + 0
 - Add Visual Studio Code to System settings > Keyboard > Shortcuts > Function Keys
+- Create `~/Library/KeyBindings/DefaultKeyBinding.dict` to disable beeping for shortcuts CTRL + CMD + ↓ / ← / → ([stackexchange.com](https://apple.stackexchange.com/a/260566/54870))
+
+```javascript
+{
+    "^@\UF701" = "noop:";
+    "^@\UF702" = "noop:";
+    "^@\UF703" = "noop:";
+}
+```
 
 
 ## Backup
