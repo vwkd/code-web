@@ -3,7 +3,6 @@
 ## Setup
 
 - Activate Command line integration
-- Install JetBrains Mono and Fira Code font, activate font ligatures
 
 
 ## Settings
@@ -69,3 +68,28 @@ Add the following to `settings.json`.
 ## Backup
 
 - Save user config from `~/Library/Application Support/Code/User/`
+
+
+## Fonts
+
+- JetBrains Mono
+- Fira Code
+- activate font ligatures
+
+
+## Extensions
+
+- Chrome Debugger
+- ESLint
+- LiveServer
+
+### ESLint configuration
+
+- Set _ESLint: Run_ to _onSave_.
+
+### LiveServer configuration
+
+- Set _Live Server: Custom Browser_ to _Chrome_.
+- Enable _Do not show Info messages_.
+- Enable _Do not verify tags_.
+- Set _Host_ to `localhost`
