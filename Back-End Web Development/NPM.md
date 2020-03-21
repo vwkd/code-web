@@ -2,19 +2,6 @@
 
 [TOC]
 
-## Terminology
-
-### Modules
-
-- `.js` file that exports a function, can be imported in another `.js`, e.g. using `require()` in Node.js
-- can be package but doesn't need to
-
-### Packages
-
-- folder containing a `package.json` and a `.js` file that is referenced as `main` property in `package.json`, by default is called `index.js`
-- packages are modules, but modules are not necessarily packages
-
-
 
 
 ## NPM (Node Package Manager)
@@ -35,7 +22,6 @@
 #### `name` property
 
 - package name, short but descriptive
-
 - must be URL-safe characters, all lower-case, not start with underscore or dot
 - must be unique in npm registry if package is unscoped
 
@@ -70,7 +56,6 @@
 #### `dependencies` property
 
 - specifies packages the package depends on
-
 - are installed along when the package itself is installed, i.e. for each usual user
 
 #### `devDependencies` property
@@ -89,8 +74,6 @@
 
 module.exports = func1;
 ```
-
-
 
 <!-- ToDo: Finish -->
 

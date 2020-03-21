@@ -4,7 +4,7 @@
 
 ## Notation
 
-- a commit can be referenced by its 7 first characters of its checksum or it relative position to the current head, e.g. `HEAD~1` is previous commit
+- a commit can be referenced by its full checksum, the first 7 characters of its checksum, or its relative position to the current head, e.g. `HEAD~1` is previous commit
 
 
 
@@ -13,12 +13,8 @@
 #### `git config`
 
 - shorthand to edit config file in either ??? if local or ??? if global
-
 - `--edit` opens config file ??
-
 - `--global`, `--local`, `--system` ???
-
-
 
 ```bash
 git config --global user.name "Max Mustermann"
@@ -91,6 +87,7 @@ git config --global alias.glog "log --oneline --graph --decorate"
 - can use wildcards, e.g. `.` for all
 - `--all` all changed files in repo (?)
 - if wants to update already staged changes, just re add again, previous not yet committed stages will stay as unreferenced blobs, will eventually be garbage collected
+- `-p` interactively add only specific parts of a file
 
 #### `git reset <option> <commit>`
 
@@ -115,7 +112,7 @@ git config --global alias.glog "log --oneline --graph --decorate"
 - needs to provide description, multi-line possible
 - `-m "Descriptive message“` inline message
 - `-a` commit all changes of already tracked files without need to stage
-- `--amend` add to previous commit instead of new commit, actually creates new commit but references same parent commit, with no pointer pointing to previous commit it will eventually be garbage collected, but if already pushed commit, beware: if already pushed previous commit, will fail to push amended commit because the commit history now diverges
+- `--amend` add to previous commit instead of new commit, creates entirely new commit which references same parent commit, with no pointer pointing to previous commit it will eventually be garbage collected, beware: if already pushed previous commit, will fail to push amended commit because the commit history now diverges, needs to force push ⚠️
 
 
 
@@ -166,6 +163,20 @@ git config --global alias.glog "log --oneline --graph --decorate"
 - deletes branch remotely
 
 #### `git branch -a` (?)
+
+#### Cherrypicking
+
+- ???
+
+##### `git revert`
+
+- undo a cherrypick ???
+
+##### `git rebase`
+
+- replays series of commits on top of another commit, e.g. move branch forward on master branch as if it was created later, doesn't need to merge in master to get latest changes
+- beware: creates completely new commits, leaves old for garbage collection, like `commit --amend`, now history diverges for others, needs to force push ⚠️
+- while creating these new commits can also modify them, e.g. squash into one, drop a change, rename the commit message, reorder the commits, basically can rewrite history freely
 
 
 

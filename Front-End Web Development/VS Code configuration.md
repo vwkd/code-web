@@ -1,8 +1,13 @@
-## Visual Studio Code settings
+# Visual Studio Code settings
+
+[TOC]
+
+
 
 ## Setup
 
 - Activate Command line integration
+
 
 
 ## Settings
@@ -30,23 +35,31 @@
 - Enable _Auto Detect Color Scheme_
 
 
+
 ## Interface settings
 
 - Disable _Open Editors_, _Outline_ and _NPM Scripts_ in Explorer view.
+
 
 
 ## Custom settings
 
 Add the following to `settings.json`.
 
-- Enable autocomplete suggestions in Markdown
+### Markdown
+
+- Enable suggestions except for normal words
+- Set tab to 2 spaces instead of default 4.
 
 ```json
-    "[markdown]": {
-        "editor.quickSuggestions": true
-      }
-    }
+"[markdown]": {
+    "editor.quickSuggestions": true,
+    "editor.suggest.showWords": false,
+    // "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabSize": 2
+}
 ```
+
 
 
 ## Keyboard shortcuts
@@ -65,9 +78,11 @@ Add the following to `settings.json`.
 ```
 
 
+
 ## Backup
 
 - Save user config from `~/Library/Application Support/Code/User/`
+
 
 
 ## Fonts
@@ -75,6 +90,7 @@ Add the following to `settings.json`.
 - JetBrains Mono
 - Fira Code
 - activate font ligatures
+
 
 
 ## Extensions
