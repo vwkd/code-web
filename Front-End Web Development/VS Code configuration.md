@@ -66,6 +66,8 @@ Add the following to `settings.json`.
 
 - Set _Toggle Block Comments_ to CMD + ALT + /
 - Set _Reset Zoom_ to CMD + SHIFT + 0
+- Set _Go Forward_ to CMD + K then CMD + .
+- Set _Go Back_ to CMD + K then CMD + ,
 - Add Visual Studio Code to System settings > Keyboard > Shortcuts > Function Keys
 - Create `~/Library/KeyBindings/DefaultKeyBinding.dict` to disable beeping for shortcuts CTRL + CMD + ↓ / ← / → ([stackexchange.com](https://apple.stackexchange.com/a/260566/54870))
 

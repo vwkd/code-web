@@ -2,6 +2,8 @@
 
 [TOC]
 
+
+
 ## SVG (Scalable Vector Graphics)
 
 - XML-based markup language for describing two dimensional based vector graphics (as opposed to raster graphics)
