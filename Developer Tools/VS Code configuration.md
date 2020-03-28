@@ -22,6 +22,7 @@
 - Disable _Minimap_.
 - Set _Tab Completion_ to _on_.
 - Disable _Lightbulb_.
+- Disable _Detect Indentation_.
 
 ### Workbench
 

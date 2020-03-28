@@ -141,3 +141,13 @@ b(); // 42
 
 - why don't implement reactive operator in JS for reactive declaration, e.g. `y :: x * 2`;
 - why don't put HTML, JS, and CSS all top level? no separate `style` or `script` tags
+
+
+
+
+## Installation
+
+- install svelte
+- install prettier plugin
+- install eslint plugin
+- install Svelte for VS Code plugin
