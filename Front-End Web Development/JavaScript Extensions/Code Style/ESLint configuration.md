@@ -10,7 +10,7 @@
 - scans source code, shows syntax errors, style convention errors, structural errors
 - enforces "The Good Parts" of JavaScript, subset that makes sense
 - computes an AST from source code
-- can be used to enforce style guide as well, e.g. consistent spacing, but better use separate formatter
+- can be used to enforce formatting as well, e.g. consistent spacing, but better use separate formatter, e.g. Prettier
 
 
 
@@ -19,7 +19,7 @@
 1. Install `eslint` locally.
 
     ```bash
-    npm install eslint
+    npm install --save-dev eslint
     ```
 
 1. If needed install `typescript` locally and support for eslint

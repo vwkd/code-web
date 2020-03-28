@@ -100,6 +100,7 @@ Add the following to `settings.json`.
 - Chrome Debugger
 - ESLint
 - LiveServer
+- Prettier
 
 ### ESLint configuration
 
@@ -111,3 +112,8 @@ Add the following to `settings.json`.
 - Enable _Do not show Info messages_.
 - Enable _Do not verify tags_.
 - Set _Host_ to `localhost`
+
+### Prettier configuration
+
+- Set _Default Formatter_ to Prettier.
+- Enable _Format on Save_.
