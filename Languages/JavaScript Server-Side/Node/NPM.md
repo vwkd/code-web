@@ -28,7 +28,6 @@
 #### `version` property
 
 - package version
-
 - follows semver (semantiv versioning) system
 
 | Release type | Version number | Convention                                |
@@ -95,7 +94,6 @@ goes to `https://npmjs.com/package/<package>`
 
 - by default is tagged with latest, can tag as beta, etc.
 
-
 ### Deprecate
 
 ```javascript
@@ -115,7 +113,6 @@ npm deprecate <package-name>@<version> "<message>"
 npm list / ls
 npm search
 ```
-
 
 ### Installation
 
