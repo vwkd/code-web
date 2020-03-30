@@ -48,8 +48,8 @@
 ![](1.png)
 - chain of commits needs not be linear, can have branches
 ![](branches.png)
-- Git stores branch as a file with a pointer to _last_ commit on that branch, Graph theory guarantees that can reconstruct branch chain from it since DAG can only go forwards, just a file instead of whole copy of directory
-- The HEAD file contains a pointer to the branch that is currently checked out, it’s in „detached HEAD state“ if it directly points to a commit instead of a branch, often talks about moving HEAD pointer to another commit but actually only current branch pointer is moved to which HEAD is pointing constantly
+- In Git a branch is just a pointer to _last_ commit on that branch, Graph theory guarantees that can reconstruct branch chain from it since DAG can only go forwards, just a file containing branch name and commit hash it's pointing to instead of whole copy of directory
+- HEAD is just a pointer to the branch that is currently checked out, it’s in „detached HEAD state“ if it directly points to a commit instead of a branch, often talks about moving HEAD pointer to another commit but actually only current branch pointer is moved to which HEAD is pointing constantly
 ![](pointers.png)
 
 
@@ -58,7 +58,7 @@
 ![](areas.png)
 
 ### Working tree / directory
-- project directory
+- project directory, files currently worked on
 - a checkout of a commit, after switching branches Git recreates working directory from last commit on current branch (i.e. where HEAD is currently pointing at)
 
 ### Staging area / directory
@@ -85,16 +85,21 @@
 - remote repository
 
 
+
 ## Merge
+
 ### 3-way merge
 - creates new commit from multiple parent commits, on current branch, can then delete other branch
 - Git walks back in graph until finds first common ancestor to both branch tips, compares file by file both branch tips to common ancestor, takes only changed ones
 - if one file is changed on both, compares line after line to common ancestor, takes only changed ones
 - if same line changed on both, conflict must be resolved manually
 - afterwards need to still test code, merge can do code errors can happen if changed part  one file somehow affects new code in other file (e.g. new function from one commit references old variable name that was changed with other commit, etc.)
-### fast forward merge
+
+ ### fast forward merge
 - When one branch tip is an ancestor of the other one, i.e. on the same graph line
 - just needs to update the pointer of the lagging behind branch tip and „fast forward“ to other branch tip
+
+
 
 ## Remote
 - Git does everything locally, it doesn’t distinguish remote repositories from any other repository like in another directory, there is no central server, when doing any operation with a remote repository needs to first fetch and then do it locally
@@ -102,8 +107,12 @@
 - all branches on the remote get named „\<remote\>/\<branch\>“ e.g. „origin/master“ to keep them separate from the local branches
 - fetches newest data, does merge locally, then pushes
 
+
+
 ## Other
 - if in detached head state can commit, is like an „anonymous“ branch, needs to create branch out of it, otherwise it will be lost with next checkout to another commit because there is no reference to this branch tip
+
+
 
 ## Ressources
 - Zvonimir Spajic - [Understanding Git](https://hackernoon.com/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5)

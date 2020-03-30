@@ -94,7 +94,7 @@ git config --global alias.glog "log --oneline --graph --decorate"
 - undo staging or commit
 - option `soft`: only moves the HEAD pointer to <commit>, keeps staging and working area untouched, doesn’t delete blobs and trees, can still find via `reflog`, ready to commit again
 - option `mixed`: (default ?!) moves the HEAD pointer to <commit> and updates staging area with <commit>, keeps working area untouched, doesn’t delete blobs and trees, can still find via `reflog`, ready to stage again
-- option `hard`: moves the HEAD pointer to <commit> and updates staging and working area with <commit>, doesn’t delete blobs and trees, can still find via `reflog`, ready to start over again
+- option `hard`: moves the HEAD pointer to <commit> and updates staging and working area with <commit>, ready to start over again, doesn’t delete blobs and trees, can still find via `reflog` for 30 days, i.e. can get back any commit, but not changes that were never committed ⚠️
 - not working directory safe, could loose data if working directory has unstaged changes and is reset because there exists no blobs and trees yet, but danger only in case of `hard` option
 - ?? `HEAD -- <file>` deletes recent commit ? reverts most recent commit
 - ?? difference to checkout — ?
@@ -153,10 +153,10 @@ git config --global alias.glog "log --oneline --graph --decorate"
 
 #### `git branch -d <branch>`
 
-- deletes branch ??? deletes only pointer
-
-- only works if there are no unmerged changes, is safe
-- doesn’t delete remote copy of branch
+- deletes branch, efficient since only needs to delete pointer
+- only works if there are no unmerged commits, is safe
+- use `-D` to force delete even if there are unmerged commits, not safe
+- beware: doesn’t delete remote copy of branch ❗️
 
 #### `git push origin --delete <branch>` ??????
 
