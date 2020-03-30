@@ -37,7 +37,7 @@
 | Major        | x.y.z          | changes that break backward compatibility |
 
 - changes to the package should come with changes to the version
-- no guarantee that other packages adhere to semver convention, i.e. a dependency of your package could introduce a non-backward compatible change in a minor or patch release, could break your package at any moment
+- no guarantee that other packages adhere to semver convention, i.e. a dependency of your package could introduce a non-backward compatible change in a minor or patch release, could break your package at any moment ⚠️
 
 #### `main` property
 
@@ -123,10 +123,9 @@ npm install / i <package-name>@<version>
 - can specify version ranges of semver, see [semver.org](https://semver.org/)
 - version is optional, latest is used by default, if inside another package and the package is inside `package.json` then this version is used by default
 - if inside another package, i.e. with `package.json`, automatically adds package to `package.json`, use `--save-dev` to add only as dev dependency, uses minor version range "\^" by default
-- if inside another package and no package-name is supplied, installs all packages as specified in `package.json`, if `--production` flag then only the non dev dependencies
+- if inside another package and no package-name is supplied, installs all packages as specified in `package.json`, if `--production` flag then only the non dev dependencies, if `package-lock.js` is present it is used instead of `package.json`, i.e. guarantees exact dependency tree
 - by default installs package(s) locally in `./node_modules` and bins into `./node_modules/.bin` within current folder or if inside package in root of package, in that folder can require in .js file or run with `npx` from command line
 - `-g` installs package(s) globally in `<node-path>/lib/node_modules` and bins into `<node-path>/bin` where, e.g. `/usr/local/`, can run in command line from anywhere
-- if inside another package with `package-lock.js`, then this is used instead of `package.json`
 
 ### NPM Dependency Model
 
@@ -135,7 +134,7 @@ npm install / i <package-name>@<version>
 - NPM puts first package and all its dependencies on top level, second package and all it's dependencies as well except the duplicate dependencies, different version becomes nested while same versions are simply skipped, also skips if existing version is within specified semver range even though a newer version might be available, i.e. uses "oldest common denominator" of a dependency
 - packages can still take up a lot of space, if first package depends on one version of another package, and all following packages on another versions of that other package, because then the first version of the other package occupies already the root level of the `.node_modules` folder, and all other versions need to be nested even if they are the same, it all depends on installation order, i.e. multiple copies of exact same dependencies can exist
 - even if fixes versions in `package.json` might get different installs on different times because dependencies themselves likely won't have their dependencies fixed etc., if those dependencies don't follow semrev guidelines might break the app because new version introduced incompatibility, could have a bug even if fixed own dependencies, `npm install` is russian roulette
-- `package-lock.js` stores exact versions of whole dependency tree, is generated automatically as soon as NPM changes the dependency packages, makes dependency tree reproducible, can reproduce exact package regardeless of intermediate dependency updates, package is "locked", should always be included in source control, but can't be published with a package since it overwrites `package.json` disabling any intermediate dependency updates, can use `npm-shrinkwrap.json` as "publishable `package-lock.json`" but not recommended
+- `package-lock.js` stores exact versions of whole dependency tree using hashes, is generated automatically as soon as NPM changes the dependency packages, makes dependency tree reproducible, can reproduce exact package regardeless of intermediate dependency updates, package is "locked", should always be included in source control, but can't be published with a package since it overwrites `package.json` disabling any intermediate dependency updates, can use `npm-shrinkwrap.json` as "publishable `package-lock.json`" but not recommended
 
 ### Update
 
