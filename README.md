@@ -18,10 +18,12 @@ The most thorough and complete resources are in "JavaScript Core", for example o
 
 - [ ] complete HTML
 - [ ] complete CSS
-- [ ] complete developer tools: ESLint, Prettier
-- [ ] complete build process: TypeScript, Babel, Webpack, SASS
+- [ ] complete JS
+- [ ] complete TS
 - [ ] complete JS frameworks: Svelte
 - [ ] complete CSS frameworks: Burma
+- [ ] complete Developer Tools: ESLint, Prettierm, etc.
+- [ ] complete Build Process: TypeScript, Babel, Webpack, SASS, etc.
 
 
 

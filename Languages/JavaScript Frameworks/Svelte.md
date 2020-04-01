@@ -2,7 +2,7 @@
 
 [TOC]
 
-
+<!-- ToDo: Difference reactive programming and reactive frameworks -->
 ## Reactive Programming
 
 - specifies the dynamic behavior of a value completely at the time of declaration
@@ -56,7 +56,8 @@ b(); // 42
 - `.svelte` components combine HTML, JS, and CSS
 - components get compiled to JS classes, can be imported and instantiated
 - scripts and styles are scoped by default to component, no need to use deep class structures anymore to target elements from within JS or CSS
-- top-level is HTML, styles and scripts go inside their tags
+- top-level is HTML, styles and scripts go inside their tags  
+  unlike in other frameworks where writes HTML and CSS in strings inside JavaScript
 - can use JS expressions inside `{}` in HTML, like template literals in JS without `$`
 
 ```html
