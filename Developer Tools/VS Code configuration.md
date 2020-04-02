@@ -99,7 +99,7 @@ Add the following to `settings.json`.
 ## Extensions
 
 - Chrome Debugger
-- ESLint
+- ESLint (only if wants to automatically check while developing)
 - LiveServer
 - Prettier
 

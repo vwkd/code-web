@@ -28,7 +28,7 @@
     npm install --save-dev typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
 
-1. If needed install editor extension.
+1. If needed install editor extension to automatically run checks while developing. Don't install, if only wants to check after development.
 
 1. Create a `.eslintrc.json` file locally. Select support for TypeScript if needed. Choose the recommended rule set.
 
@@ -36,12 +36,10 @@
     npx eslint --init 
     ```
 
-1. Configure editor extension to only check on save instead of on type.
-
 
 
 ## Configuration
 
 - use a configuration file `.eslintrc.json`
 
-<!-- ToDo: Add plugins, like eslint-plugin-es, eslint-plugin-node, eslint-plugin-promises, eslint-plugin-standard, build fully customised .eslintrc.json -->
+<!-- ToDo: Add plugins, like eslint-plugin-es, eslint-plugin-node, eslint-plugin-promises, eslint-plugin-standard -->
