@@ -152,3 +152,13 @@ b(); // 42
 - install prettier plugin
 - install eslint plugin
 - install Svelte for VS Code plugin
+
+- Syntax highlighting for VS Code
+
+```json
+{
+  "files.associations": {
+    "*.svelte": "html"
+  }
+}
+```
