@@ -6,20 +6,23 @@
 
 ## Content
 
-- add Introduction section first to motivate the topic
-- include a Resources section at last to list most important sources for previous content and where can learn more
+- begin with a 'Introduction' section to motivate the topic, introduce required terminology, etc.
+- end with a 'Resources' section that lists most important sources for previous content and additional resources to learn more
+- use bullet point writing style, each chunk of information explains only one thing, chunks sorted in logical order from simple to complex, like a mathematical proof
+- don't duplicate existing chunks, instead refer to original chunk, except if critical warning that needs to remind about again
+- feel free to rewrite and restructure sections, don't build "on top of it", shouldn't be a Wikipedia-like loose pile of facts, instead a coherent learning guide
 
 
 
 ## Style
 
 - set 1 tab to 2 spaces, never use the tab character
-- lists don't contain blank lines
+- lists don't contain blank lines between items
 - two break a new line within a list item, leave 2 spaces at end of list item and indent next line by 2 spaces
 - put code boxes in top-level between two lists instead of in list item, only if code is in the middle of a second-level list don't outdent so second-level list doesn't break
 - use sections with `##`, only first title is `#`
 - use 3 blank lines between sections, only 1 blank line to separate any deeper hierarchy
-- put 1 space between words, including unicode characters, e.g. Hello World ❗️
+- put 1 space between words, including unicode characters, e.g. `Hello World ❗️`
 
 
 
@@ -40,6 +43,9 @@
 
 ## Section
 
+- foo
+  - cow
+  - dog
 - bar
 
 ### Deep1

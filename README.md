@@ -29,4 +29,4 @@ The most thorough and complete resources are in "JavaScript Core", for example o
 
 ## Contributing
 
-Contributions are welcome, however they must be of high quality and fit the bullet point writing style. For a detailed style guide see [CONTRIBUTING](CONTRIBUTING.md).
+Contributions are welcome. For a detailed style guide see [CONTRIBUTING](CONTRIBUTING.md).
