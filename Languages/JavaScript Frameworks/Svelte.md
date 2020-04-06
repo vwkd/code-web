@@ -3,9 +3,20 @@
 [TOC]
 
 <!-- ToDo: Difference reactive programming and reactive frameworks -->
-## Reactive Programming
+## Reactive Frameworks
+
+- don't confuse with reactive programming, bad naming choice
+reactive frameworks : forward references
+
+- not what should happen at each moment, but what result should be, how app should look like, e.g. `Hello ${name}.` where `name` is automatically updated as soon as it changes
+  declarative instead of imperative
 
 - specifies the dynamic behavior of a value completely at the time of declaration
+no need to go update value when something changes
+when a value changes the app should "react"
+
+
+
 - needs way to assign variable that doesn't copy values but only link, like mathematical variables or spreadsheet cells
 
 ```javascript
@@ -41,6 +52,8 @@ b(); // 42
 ```
 
 - needs code that continuously "reacts" based on different outside conditions, e.g. the independent variable is the mouse coordinates and all dependent variables are computed from it as soon as it changes
+
+
 - reactive JS frameworks make HTML reactive
 - can use JS variables in HTML, update DOM as soon as the value in JS updates
 - without needed to manually hop out to JS, attach event handler, select DOM element, update it
@@ -53,12 +66,26 @@ b(); // 42
 
 ## Introduction
 
+- compiles to HTML, CSS and JS, only needs to bundle minimal framework, there is no framework, do all the complexity in build process, don't ship to user
+- frameworks that runs in the build process instead of in the browser of the client
+turns declarative component code into imperative vanilla JS code on the right
+
+- uses labeled statements to make linked variables ?? like spreadsheet cells
+
 - `.svelte` components combine HTML, JS, and CSS
 - components get compiled to JS classes, can be imported and instantiated
-- scripts and styles are scoped by default to component, no need to use deep class structures anymore to target elements from within JS or CSS
-- top-level is HTML, styles and scripts go inside their tags  
+- scripts and styles are scoped by default to component, no need to use deep class structures or naming schemes anymore, ???? to target elements from within JS or CSS
+
+- uses CSS animations instead of in JavaScript
+
+- top-level is HTML, styles and scripts go inside their tags, most natural choice since Web is written in HTML  
   unlike in other frameworks where writes HTML and CSS in strings inside JavaScript
+
+- also has template-like functionality for HTML, e.g. if statements, for loops
+
 - can use JS expressions inside `{}` in HTML, like template literals in JS without `$`
+
+- use `export` keyword in script tag ????
 
 ```html
 <script>
