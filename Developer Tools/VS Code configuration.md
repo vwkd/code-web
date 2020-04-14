@@ -30,6 +30,7 @@
 - Disable _Breadcrumbs_
 - Disable _Zen Mode: Center Layout_
 - Disable _Editor: Enable Preview_
+- Enable _Limit_, _Per Editor Group_, and set value to _2_.
 
 ### Window
 
