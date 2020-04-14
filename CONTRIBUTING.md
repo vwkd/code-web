@@ -11,6 +11,7 @@
 - use bullet point writing style, each chunk of information explains only one thing, chunks sorted in logical order from simple to complex, like a mathematical proof
 - don't duplicate existing chunks, instead refer to original chunk, except if critical warning that needs to remind about again
 - feel free to rewrite and restructure sections, don't build "on top of it", shouldn't be a Wikipedia-like loose pile of facts, instead a coherent learning guide
+- keep example code snippets as simple as possible, focus only on single purpose, not showcase of full use in production
 
 
 
