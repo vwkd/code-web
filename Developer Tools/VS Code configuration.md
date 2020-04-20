@@ -64,6 +64,26 @@ Add the following to `settings.json`.
 
 
 
+## Custom emmet snippets
+
+- create a `snippets.json` in `/Users/<username>/Library/Application Support/Code/User`
+- add the path to `emmet.extensionsPath` in `settings.json`
+- add the following, reload emmet snippets by modifying `settings.json` or reloading VS Code
+
+```json
+{
+  "html": {
+    "snippets": {
+        "!|html:5": "!!!+doc",
+        "!!!": "{<!DOCTYPE html>}",
+        "doc": "html[lang=en-US dir=ltr]>(head>meta[charset=${charset}]+title{${1:Title}}+meta:vp+link:css+script:src)+body"
+    }
+  }
+}
+```
+
+
+
 ## Keyboard shortcuts
 
 - Set _Toggle Block Comments_ to CMD + ALT + /
