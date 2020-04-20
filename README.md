@@ -18,8 +18,7 @@ The most thorough and complete resources are in "JavaScript Core", for example o
 
 - [ ] complete HTML
 - [ ] complete CSS
-- [ ] complete JS
-- [ ] complete TS
+- [ ] complete JS: core, client and server
 - [ ] complete JS frameworks: Svelte
 - [ ] complete CSS frameworks: Burma
 - [ ] complete Developer Tools: ESLint, Prettierm, etc.
