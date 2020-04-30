@@ -1,3 +1,5 @@
+.vscode
+
 # General
 .DS_Store
 .AppleDouble
@@ -24,7 +26,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# IDEs
-.idea
-.vscode
