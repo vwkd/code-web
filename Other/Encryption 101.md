@@ -53,7 +53,7 @@
 - use separate session keys for each communication session
 - ensures that past communication sessions can not be decrypted if current session key is compromised
 - perfect forward secrecy, if negotiation of session keys didn't involve transmitting them, e.g. DH, but not RSA
-- perfect forward secrecy ensures that past communication sessions can not be decrypted if private key is compromised
+- perfect forward secrecy ensures that past communication sessions can not be decrypted even if private key is compromised
 - beware: if private key is lost future communication is not protected, adversary can imposter compromised party and continue communication with the other party ❗️
 
 
@@ -84,7 +84,7 @@
 
 
 
-## Public key authentication
+## Identification
 
 - asymmetric encryption allows to communicate with unkown party, unlike with symmetric encryption where needed to first exchange a key
 - asymmetric encryption guarantees confidentiality, authenticity and integrity of transmitted data
@@ -107,29 +107,15 @@
 
 
 
-## Threads
+## Possible threads
 
-<!-- ToDo: Finish -->
-
+- metadata, e.g. identities, time, quantity, location, etc.
+- any participating party, CA, e.g. steal private key, steal decrypted message, etc.
+- third party that verfies public key
 - brute force attack on key
-- encryption keys are not totally random, ciphertext becomes predictable ???
-- flaw in cipher, e.g. RSA cipher relies on difficulty of prime factorization
-- flaw in cryptographic hash function, allows to reconstruct input
-
-- metadata, can see who is communicating, time, quantity, location
-- compromisation of any one party, e.g. steal private key, read messages after decryption
-digitally or personal
-full-disk encryption
-
-- compromised PKI
-
-
-An attacker may be able to trick you into using their public key, which means that they will be able to read your message, instead of the intended recipient. That means that you have to verify that a public key is being used by a particular person. Key verification is any way that lets you match a key to a person.
-
-MITM acts as other party to each communication, intercepts public key exchange and replaces by its own, can then intercept messages and relay to the other party
-where MITM talks to both sides impostering to each as the other party ???
-
-communication of public keys is intercepted by a third party (the "man in the middle") and then modified to provide different public keys instead. Encrypted messages and responses must also be intercepted, decrypted, and re-encrypted by the attacker using the correct public keys for different communication segments, in all instances, so as to avoid suspicion.
+- random number generator, key is not totally random, ciphertext becomes predictable
+- cipher, computation becomes cheap, e.g. prime factorization for RSA
+- cryptographic hash function, hash becomes reversible
 
 
 

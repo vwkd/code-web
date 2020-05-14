@@ -2,6 +2,8 @@
 
 [TOC]
 
+
+
 ## Why do we need character encoding?
 
 - computers can store only bits („binary digits“, 0 and 1)
@@ -26,6 +28,7 @@
 ## Encoding standards
 
 ### ASCII
+
 - ASCII („American Standard Code for Information Interchange“) was first character encoding standard for english language, created in 1960s
 - included 128 essential characters, e.g. `A` was encoded as `65`
 - used 7 bits in binary for each code point, stored in 8-bit bytes
@@ -45,7 +48,7 @@
 - not a character encoding standard, just the coded character set
 - many different character encodings can encode all Unicode characters, like UTF-8, UTF-16, UTF-32
 - a character in Unicode is notated by `U+XXXX`, where `XXXX` is the code point in hexadecimal, e.g. `A` is `U+0041`
-- Unicode characters are grouped in "planes" of 2^16^ (65,536) code points, there are already multiple planes, since they come one after each other and are not yet full, some characters have code points larger than 16^4^ (65,536), those need more than 4 hexadecimal digits to be represented, i.e. `U+XXXXX` or `U+XXXXXX`
+- Unicode characters are grouped in "planes" of 2^16 (65,536) code points, there are already multiple planes, since they come one after each other and are not yet full, some characters have code points larger than 16^4^ (65,536), those need more than 4 hexadecimal digits to be represented, i.e. `U+XXXXX` or `U+XXXXXX`
 
 #### UTF-32
 
@@ -54,10 +57,12 @@
 - even for most simple characters wastes 4 bytes
 
 #### UTF-16
+
 - variable-length Unicode character encoding
 - uses 2 or 4 bytes (= _16_ or 32 bits) per character
 
 #### UTF-8
+
 - variable-length Unicode character encoding
 - uses 1, 2, 3 or 4 bytes (= _8_, 16, 24, 32 bits) per character
 - is the character encoding standard of the Web
@@ -67,6 +72,6 @@
 
 ## References
 
-- [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](http://kunststube.net/encoding/) - David Zentgraf
-- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) - Joel Spolsky
-- [Character encoding](https://en.wikipedia.org/wiki/Character_encoding) - Wikipedia
+- [David Zentgraf - What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](http://kunststube.net/encoding/)
+- [Joel Spolsky - The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+- [Wikipedia - Character encoding](https://en.wikipedia.org/wiki/Character_encoding)
