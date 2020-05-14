@@ -1,4 +1,4 @@
-# Tutorials Style Guide
+# Notes Style Guide
 
 [TOC]
 

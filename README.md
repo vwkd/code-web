@@ -1,4 +1,4 @@
-# Tutorials For Web Developers
+# Notes For Web Developers
 
 [TOC]
 
@@ -6,23 +6,11 @@
 
 ## Introduction
 
-This repo contains tutorials for web developers which I wrote for myself while learning web development and thought sharing might be useful to others
+These notes comprise the things I learned while studying web development. Maybe they are useful to others as well.
 
-It is a constant work in progress.
+This is a constant work in progress. Maybe I'll put the notes up on a web page some day to make them easier to browse. Until then, they are available as markdown files in the respective directories.
 
-The most thorough and complete resources are in "JavaScript Core", for example on "Objects" and "Functions".
-
-
-
-## Roadmap
-
-- [ ] complete HTML
-- [ ] complete CSS
-- [ ] complete JS: core, client and server
-- [ ] complete JS frameworks: Svelte
-- [ ] complete CSS frameworks: Burma
-- [ ] complete Developer Tools: ESLint, Prettierm, etc.
-- [ ] complete Build Process: TypeScript, Babel, Webpack, SASS, etc.
+The most thorough notes are on JavaScript and TypeScript in the [Languages](Languages/) directory, for example [Objects](Languages/JavaScript%20Core/2.%20Objects.md) and [Functions](Languages/JavaScript%20Core/3.%20Functions.md).
 
 
 
