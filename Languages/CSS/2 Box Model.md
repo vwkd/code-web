@@ -7,12 +7,13 @@
 ## Introduction
 
 - visual representation of elements in a document
-- every element is represented as a box
+- every element is represented as a box (*)
 - document tree is transformed into box tree
 - box layout defines how box tree is rendered
-- style of box is taken from properties of element
-- (additional helper boxes may be generated, will only look at principal box of element here)
-
+- style of box is taken from properties of element (*)
+- (* for exact details see Box generation)
+- a box "contains" another box, if in the box tree it's a descendant of the box
+- descendant box refers to box of descendant element
 
 
 ## Viewport
@@ -72,13 +73,7 @@ padding, border, margin affect size of box, therefore may affect layout, e.g. li
 - margin can be negative, results in ??? controled overflow of parent box ??
 - initial value is `0`, beware: user agent style sheet may set a value ❗️
 - percentage refers to _width_ of containing block, beware: even for `margin-top` and `margin-bottom` ❗️
-
-<!-- Block Layout
-Adjoining margins in block layout collapse, see Block Layout
-beware: horizontal margins never collapse
-
-vertical margins don't have any effect on inline elements
--->
+- beware: vertical margins have no effect on inline-level boxes, see Flow Layout
 
 <!--  ToDo: see css-break-4
 Margins adjoining a fragmentation break are sometimes truncated
@@ -150,3 +145,10 @@ The background properties are not inherited, but the parent box’s background w
 <!-- ToDo: see css-color -->
 
 color of an element's content (usually text).
+
+
+
+## Resources
+
+- [W3C - CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [W3C - CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
