@@ -1,79 +1,4 @@
-# CSS Layout
-
-++——————————————————————————————————++
-++——————————————————————————————————++
-
-## The box model
-
-### The box
-(img)
-- each HTML element is like a box, has content, padding, border and margin
-- the box resizes dynamically based on content (if not fixed by styling)
-- the margin is always invisible and separates the element from its neighbors
-- for adjacent elements horizontal margins add, vertical margins collapse to only the larger margin of both margins (except for floating and absolutely positioned elements)
-- can visualize boxes while developing, but since uses borders themselves can only show padding-boxes and only if no separate borders have been defined
-* {
-	border: 1px solid red;
-}
-
-### Box styling
-
-\[Box styling go here: Content, Padding, Border, Margin]
-
-- sides using 4 arguments: top, right, bottom, left
-- sides using 3 arguments: top, left/right, bottom
-- sides using 2 arguments: top/bottom, left/right
-- sides using 1 argument: all
-
-- `box-sizing`: specifies how size of element is calculated
-	`content-box` (default, size includes only content), `border-box` (size includes content, padding and border, i.e. shrinks content box)
-
-###  Box types
-
-##### Block-level elements
-- Can contain other inline- or block-level elements
-- CSS properties `height`, `width`, `text-align` have effect
-- By default take up full width of parent element, with its padding, border and margins are already included in calculation
-- By default start in new line, flow is top to bottom
-- Examples: headings, `<p>`, lists and `<li>`, `<table>`, `<div>`
-
-##### Inline-level elements
-- Can contain only other inline-level elements
-- CSS properties `height`, `width`, `text-align` have no effect 
-- By default take up only as much width as needed of parent element
-- By default start in-line, flow is left to right
-- Examples: `<a>`, `<img>`, most formatting elements, `<span>`
-
-### HTML flow
-- HTML elements are positioned as a flow of boxes, one box after the other
-- In western writing mode (horizontal-tb) block-level elements flow from top to bottom, inline elements flow from left to right and wrap into the next line
-- The normal flow pushes the boxes dynamically to accommodate all
-- Use HTML elements according to their semantic meaning, not their default position, the position can always be changed later
-
-++——————————————————————————————————++
-++——————————————————————————————————++
-
-## Layout tools
-
-CSS Grid and Flexbox.
-- Floats — Applying a float value such as left can cause block level elements to wrap alongside one side of an element, like the way images sometimes have text floating around them in magazine layouts.
-
-- Table layout — features designed for styling the parts of an HTML table can be used on non-table elements using display: table and associated properties.
-- Multi-column layout — The Multi-column layout properties can cause the content of a block to layout in columns, as you might see in a newspaper.
-- !!! Don’t use tables to layout, very messy
-
-++——————————————————————————————————++
-
-### `display` property
-
-- specified the display behavior of an element
-- changes the behavior of an element to that of a different box type (but not nature itself!), e.g. can make `<span>` look like block-level element but still can’t nest `<div>` inside it
-- `none`: removes element from view entirely, to only hide but keep space use `visibility` property
-- `block`: box of a block-level element, i.e. has size properties
-- `inline`: box of a inline-level element , i.e. has no size properties
-- `inline-block` box of a block-level element in line, i.e. has size properties
-
-++——————————————————————————————————++
+<!-- ToDo: incorporate, then delete -->
 
 ### `position` property
 
@@ -135,14 +60,6 @@ The containing block of an element is the
 
 	coupled with width property, if width: 100% no space for floats anyway
 
-
-++——————————————————————————————————++
-
-### ??? Flexbox
-
-auf container
-- display: flex;
--   flex-wrap: nowrap;
 
 ++——————————————————————————————————++
 
