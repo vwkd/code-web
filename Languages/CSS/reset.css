@@ -1,0 +1,28 @@
+/* complete reset of user agent style sheet */
+
+* {
+    all: initial;
+}
+
+/* hide head */
+
+head,
+meta,
+title,
+link,
+style,
+script {
+    display: none;
+}
+
+/* enable focus outline for accessibility */
+
+:focus {
+    outline: auto 5px rgb(0, 119, 204);
+}
+
+/* fix sizing box */
+
+* {
+    box-sizing: border-box;
+}
