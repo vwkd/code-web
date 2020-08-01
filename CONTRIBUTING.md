@@ -24,7 +24,8 @@
 - put code boxes in top-level between two lists instead of in list item, only if code is in the middle of a second-level list don't outdent so second-level list doesn't break
 - use sections with `##`, only first title is `#`
 - use 3 blank lines between sections, only 1 blank line to separate any deeper hierarchy
-- put 1 space between words, including unicode characters, e.g. `Hello World ❗️`
+- put 1 space between words, including emojis, e.g. `Hello World 🚀`
+- put single emoji at end of every "beware:", chain three warning signs if it is of critical importance, e.g. ❗️, ⚠️, 🎉, ⚠️⚠️⚠️, etc.
 
 
 
