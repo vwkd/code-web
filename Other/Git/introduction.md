@@ -2,6 +2,8 @@
 
 [TOC]
 
+<!-- ToDo: finish, rework with book from Scott Chacon, integrate pictures from /static -->
+
 ## Idea
 
 - Version history for each file

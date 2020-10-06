@@ -2,6 +2,8 @@
 
 [TOC]
 
+
+
 ## Introduction
 
 - simple text editor for command line
@@ -38,3 +40,7 @@
 | `^K`                 | Cut marked region / current line  |
 | `^U`                 | Paste                             |
 | `M-U` / `M-E`        | Undo / redo last operation        |
+
+
+
+## Resources

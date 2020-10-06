@@ -2,6 +2,8 @@
 
 [TOC]
 
+<!-- ToDo: finish, rework -->
+
 ## Notation
 
 - a commit can be referenced by its full checksum, the first 7 characters of its checksum, or its relative position to the current head, e.g. `HEAD~1` is previous commit
