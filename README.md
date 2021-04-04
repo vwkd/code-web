@@ -16,6 +16,16 @@ This is a constant work in progress. Maybe I'll put the notes up on a web page s
 
 
 
+## Symbol reference
+
+- 👍 / 👎 new / old way of doing things, prefer new way
+- 🚫 deprecated, should not be used
+- ❗️important, make sure you understand this
+- ⚠️ attention, make sure you definitely understand this
+- ❓unconfirmed statement, not sure yet
+
+
+
 ## Contributing
 
 Contributions are always welcome if you like to write in the same style. For a detailed style guide see [CONTRIBUTING](CONTRIBUTING.md).
