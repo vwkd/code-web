@@ -4,6 +4,69 @@
 
 <!-- ToDo: finish, rework with book from Scott Chacon, integrate pictures from /static -->
 
+<!-- todo: incorporate
+
+.git is repository
+
+Staging area: organize what what’s to be commited
+
+“Working directory is clean” doesn’t mean it’s empty, just that files have been committed, everything is saved
+
+git commit —amend creates new commit, references same previous one, points master to new commit, only if not pushed!! (?????)
+
+git reset —mixed is default
+—hard overwrites all tracked files (not untracked)
+
+Unreferenced commits are garbage collected after 30? days
+
+——
+
+Can’t loose files, because commit hashes are chained to previous, like Bitcoin, 
+
+git diff shows differences between working tree and staging area
+—staged compares staging area with most recent commit
+
+git rm deletes file from working tree and adds deletion to stage, can then commit deletion
+
+git checkout — <file> resets working tree from staging area (?)
+
+git reset resets staging area from last commit, it relative to HEAD
+
+Branches: work on different version of files in parallel
+
+Detached HEAD state when HEAD points directly to a commit instead of a branch
+
+Switching branches as well as merging are both blocked if there are uncommitted changes in the working tree
+Deleting branches is blocked if not merged
+
+Stash to quickly get a clean working tree
+
+————- Remotes
+
+Remote repository: repository in another location, e.g. another directory, remote server
+
+Remember setting local config if don’t want to use the global
+
+Git remote - shows remote, -v shows full URL, or add new aliases
+
+Git fetch origin
+Git merge origin/master
+   Merges origin/master into local master (if master is checked out)
+Git pull is both combined
+
+Collaborating: creating fork, fetching changes from fork and upstream, pushing to fork, pull request from fork to upstream 
+
+———- Stash
+
+Can be used to carry over uncommitted changes from one branch to another if edited in wrong branch
+
+——— Config
+username, email, settings
+gitignore
+difftool (?)
+
+ -->
+
 ## Idea
 
 - Version history for each file
