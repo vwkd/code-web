@@ -7,10 +7,11 @@
 - information synchronisation system on the Internet
 - decentralised object database, eventually consistent
 - like Git, but for real-time data
+- beware: not a blockchain, database is not protected against lost or dropped messages, homeservers can differ if one lost messages the other didn't ❗️
 - secure by default, E2E
 - allows interoperable, decentralised, real-time IP communication
-- liberates fragmented IP communication, vendor lock-in, e.g. WhatsApp, Telegram, Signal, etc.
-- like SMTP for email, like PSTN for phone, but for any type of communication
+- liberates fragmented IP communication from vendor lock-in, e.g. WhatsApp, Telegram, Signal, etc.
+- like SMTP for email or PSTN for phone, but for any type of communication
 
 
 
