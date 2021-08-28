@@ -3,6 +3,7 @@ title: Introduction
 author: vwkd
 index: 1
 tags:
+  - languages
   - svg
 ---
 

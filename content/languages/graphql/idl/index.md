@@ -3,6 +3,7 @@ title: IDL
 author: vwkd
 index: 3
 tags:
+  - languages
   - graphql
 ---
 

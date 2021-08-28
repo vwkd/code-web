@@ -3,6 +3,7 @@ title: Type operators
 author: vwkd
 index: 8
 tags:
+  - languages
   - typescript
 ---
 

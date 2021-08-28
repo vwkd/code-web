@@ -3,6 +3,7 @@ title: Accessible Rich Internet Applications (ARIA) attributes
 author: vwkd
 index: 8
 tags:
+  - languages
   - html
 ---
 

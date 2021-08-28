@@ -3,6 +3,7 @@ title: Classes
 author: vwkd
 index: 5
 tags:
+  - languages
   - typescript
 ---
 

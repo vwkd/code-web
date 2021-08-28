@@ -3,6 +3,7 @@ title: JSON (JavaScript Object Notation)
 author: vwkd
 index: 12
 tags:
+  - languages
   - javascript
 ---
 

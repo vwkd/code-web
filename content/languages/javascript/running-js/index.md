@@ -3,6 +3,7 @@ title: Running JS
 author: vwkd
 index: 1.1
 tags:
+  - languages
   - javascript
 ---
 

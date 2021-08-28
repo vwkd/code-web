@@ -3,6 +3,8 @@ title: Document Object Model (DOM) API
 author: vwkd
 index: 3
 tags:
+  - languages
+  - javascript
   - web-apis
 ---
 

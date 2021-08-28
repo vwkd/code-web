@@ -3,6 +3,7 @@ title: Link
 author: vwkd
 index: 7
 tags:
+  - languages
   - html
 ---
 

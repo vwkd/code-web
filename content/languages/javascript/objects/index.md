@@ -3,6 +3,7 @@ title: Objects
 author: vwkd
 index: 3
 tags:
+  - languages
   - javascript
 ---
 

@@ -3,6 +3,7 @@ title: Type constructors
 author: vwkd
 index: 6
 tags:
+  - languages
   - typescript
 ---
 

@@ -3,6 +3,7 @@ title: Regular expressions (Regex)
 author: vwkd
 index: 8
 tags:
+  - languages
   - javascript
 ---
 

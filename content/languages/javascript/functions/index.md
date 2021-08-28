@@ -3,6 +3,7 @@ title: Functions
 author: vwkd
 index: 4
 tags:
+  - languages
   - javascript
 ---
 

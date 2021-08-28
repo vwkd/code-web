@@ -3,6 +3,8 @@ title: Node Package Manager (NPM)
 author: vwkd
 index: 2
 tags:
+  - languages
+  - javascript
   - node
 ---
 

@@ -3,6 +3,7 @@ title: Generic types
 author: vwkd
 index: 7
 tags:
+  - languages
   - typescript
 ---
 

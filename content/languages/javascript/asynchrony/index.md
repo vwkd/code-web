@@ -3,6 +3,7 @@ title: Asynchrony
 author: vwkd
 index: 10
 tags:
+  - languages
   - javascript
 ---
 

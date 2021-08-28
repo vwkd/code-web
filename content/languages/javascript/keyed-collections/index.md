@@ -3,6 +3,7 @@ title: Keyed Collections
 author: vwkd
 index: 6
 tags:
+  - languages
   - javascript
 ---
 

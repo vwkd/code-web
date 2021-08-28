@@ -3,6 +3,7 @@ title: Media
 author: vwkd
 index: 6
 tags:
+  - languages
   - html
 ---
 

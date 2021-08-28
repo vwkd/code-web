@@ -3,6 +3,8 @@ title: RequestAnimationFrame API
 author: vwkd
 index: 6
 tags:
+  - languages
+  - javascript
   - web-apis
 ---
 

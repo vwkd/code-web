@@ -3,6 +3,7 @@ title: Tables
 author: vwkd
 index: 4
 tags:
+  - languages
   - html
 ---
 

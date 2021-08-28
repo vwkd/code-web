@@ -3,6 +3,7 @@ title: Arrays
 author: vwkd
 index: 5
 tags:
+  - languages
   - javascript
 ---
 

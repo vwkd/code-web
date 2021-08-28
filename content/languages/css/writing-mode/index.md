@@ -3,6 +3,7 @@ title: Writing Mode
 author: vwkd
 index: 9
 tags:
+  - languages
   - css
 ---
 

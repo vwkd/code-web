@@ -3,6 +3,8 @@ title: Timeout API
 author: vwkd
 index: 5
 tags:
+  - languages
+  - javascript
   - web-apis
 ---
 

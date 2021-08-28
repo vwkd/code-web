@@ -3,6 +3,7 @@ title: Iterators and Generators
 author: vwkd
 index: 9
 tags:
+  - languages
   - javascript
 ---
 

@@ -3,6 +3,7 @@ title: Input
 author: vwkd
 index: 5
 tags:
+  - languages
   - html
 ---
 

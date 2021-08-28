@@ -3,6 +3,7 @@ title: Continuation Pasing Style (CPS)
 author: vwkd
 index: 10.1
 tags:
+  - languages
   - javascript
 ---
 

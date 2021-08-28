@@ -3,6 +3,8 @@ title: Browser Object Model (BOM) API
 author: vwkd
 index: 2
 tags:
+  - languages
+  - javascript
   - web-apis
 ---
 

@@ -3,6 +3,8 @@ title: Events API
 author: vwkd
 index: 4
 tags:
+  - languages
+  - javascript
   - web-apis
 ---
 

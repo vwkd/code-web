@@ -3,6 +3,7 @@ title: Async await
 author: vwkd
 index: 10.3
 tags:
+  - languages
   - javascript
 ---
 

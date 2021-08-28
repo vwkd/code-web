@@ -3,6 +3,8 @@ title: Streams
 author: vwkd
 index: 4
 tags:
+  - languages
+  - javascript
   - node
 ---
 

@@ -3,6 +3,7 @@ title: Patterns
 author: vwkd
 index: 10.4
 tags:
+  - languages
   - javascript
 ---
 

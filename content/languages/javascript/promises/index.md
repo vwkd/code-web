@@ -3,6 +3,7 @@ title: Promises
 author: vwkd
 index: 10.2
 tags:
+  - languages
   - javascript
 ---
 

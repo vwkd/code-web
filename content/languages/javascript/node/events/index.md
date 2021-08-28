@@ -3,6 +3,8 @@ title: Events
 author: vwkd
 index: 3
 tags:
+  - languages
+  - javascript
   - node
 ---
 

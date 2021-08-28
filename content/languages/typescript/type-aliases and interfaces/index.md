@@ -3,6 +3,7 @@ title: Type aliases and interfaces
 author: vwkd
 index: 4
 tags:
+  - languages
   - typescript
 ---
 

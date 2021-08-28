@@ -3,6 +3,7 @@ title: Strings
 author: vwkd
 index: 7
 tags:
+  - languages
   - javascript
 ---
 

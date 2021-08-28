@@ -3,6 +3,7 @@ title: Modules
 author: vwkd
 index: 11
 tags:
+  - languages
   - javascript
 ---
 

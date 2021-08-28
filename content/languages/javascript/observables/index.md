@@ -3,6 +3,7 @@ title: Observables
 author: vwkd
 index: 13
 tags:
+  - languages
   - javascript
 ---
 

@@ -3,6 +3,7 @@ title: Data Types
 author: vwkd
 index: 2
 tags:
+  - languages
   - css
 ---
 

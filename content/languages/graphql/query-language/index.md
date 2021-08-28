@@ -3,6 +3,7 @@ title: Query language
 author: vwkd
 index: 2
 tags:
+  - languages
   - graphql
 ---
 
