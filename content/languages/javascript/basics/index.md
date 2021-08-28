@@ -24,7 +24,7 @@ tags:
 ## Identifier
 
 - sequence of characters to identify variable, function, property, etc.
-- can contain letters, digits, \_, \$, can not start with digit, convention is to not use \_ or \$ as they are used by external modules
+- can contain letters, digits, \_, $, can not start with digit, convention is to not use \_ or $ as they are used by external modules
 - cannot be keyword, e.g. `true`, `var`, `function`, `if`, `return`, etc.
 - convention is to use lower camelCase for variables, functions and object properties, and upper CamelCase for constructors and classes
 - case sensitive
@@ -381,14 +381,14 @@ console.log(x.second); // {b: 2, c: 3, d: 4, e: 5}
 
 ##### Integer literals
 
-- decimal: $d_i \ldots d_0$ with $d_i \in \{0,1,\ldots,9\}$, e.g. `117`, no leading zero
+- decimal: `d_i \ldots d_0` with `d_i \in \{0,1,\ldots,9\}`, e.g. `117`, no leading zero
 - hexadecimal: prefix `0x` or `0X`, e.g. `0x1123`
 - octal: prefix `0o` or `0O`, e.g. `0o77`
 - binary: prefix `0b` or `0B`, e.g. `0b11`
 
 ##### Floating-point literals
 
-- decimal: $+$/$-d_i \ldots d_0.d_i \ldots d_0E$/$e+$/$-d_i \ldots d_0$ with $d_i \in \{0,1,\ldots,9\}, e.g. `-4.20e6`, no leading zero
+- decimal: `+`/`-d_i \ldots d_0.d_i \ldots d_0E`/`e+`/`-d_i \ldots d_0` with `d_i \in \{0,1,\ldots,9\}`, e.g. `-4.20e6`, no leading zero
 
 #### BigInt literals
 
