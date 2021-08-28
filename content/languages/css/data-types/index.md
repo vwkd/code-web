@@ -17,7 +17,7 @@ tags:
 
 ## Identifiers
 
-- `<ident>` for pre-defined identifiers, `<custom-ident>` for author-defined identifiers < data type
+- `<ident>` for pre-defined identifiers, `<custom-ident>` for author-defined identifiers &lt; data type
 - keywords, e.g. `auto`, `start`, `center`, `inherit`, etc.
 - unquoted text
 - case insensitive for `<ident>`, case sensitive for `<custom-ident>`
@@ -28,7 +28,7 @@ tags:
 
 ## Strings
 
-- `<string>` < data type
+- `<string>` &lt; data type
 - quoted text
 - double quotes or single quotes
 - beware: same quotes as delimiters in string need to be escaped using `\` ❗️
@@ -38,7 +38,7 @@ tags:
 
 ## URLs
 
-- `<url>` < data type
+- `<url>` &lt; data type
 - value of `url()` function, `url( <string> <url-modifier>* )`
 - beware: legacy places allowed `<string>` itself, e.g. for `@import` ❗️
 - beware: base URL in external style sheet is URL of style sheet itself, not of document that uses style sheet ❗️
@@ -47,7 +47,7 @@ tags:
 
 ## Integers
 
-- `<integer>` < data type
+- `<integer>` &lt; data type
 - integer
 - leading zero for multi-digit integer part is ignored, e.g. `02` is `2`
 
@@ -55,7 +55,7 @@ tags:
 
 ## Floating-point number
 
-- `<number>` < data type
+- `<number>` &lt; data type
 - floating-point number
 - leading zero for multi-digit integer part is ignored, e.g. `02` is `2`
 - leading zero for purely fractional number can be omitted, e.g. `0.141` or `.141`
@@ -64,7 +64,7 @@ tags:
 
 ## Percentage
 
-- `<percentage>` < data type
+- `<percentage>` &lt; data type
 - number followed by %
 - fraction of another reference value (of numeric data type)
 - resolves to same data type as reference value
@@ -76,7 +76,7 @@ tags:
 
 ## Ratio
 
-- `<ratio>` < data type
+- `<ratio>` &lt; data type
 - two numbers separated by `/`
 - multiplicative relationship between two numeric values of same data type
 - resolves to same data type as consituent values
@@ -88,7 +88,7 @@ tags:
 
 ## Dimension
 
-- `<dimension>` < data type
+- `<dimension>` &lt; data type
 - number followed by a unit, no whitespace, e.g. `1px`
 - unit is a pre-defined identifier, see Identifiers, i.e. case-insensitive, no quotes, etc.
 - for `0` can omit unit
@@ -98,7 +98,7 @@ tags:
 
 ## Length
 
-- `<length>` < `<dimension>` < data type
+- `<length>` &lt; `<dimension>` &lt; data type
 - number with a unit of dimension length
 - beware: for screen media all units are eventually relative to pixel unit, e.g. through value of property they depend on, initial value, size of viewport, etc. ❗️
 
@@ -208,7 +208,7 @@ tags:
 - `fr`: fraction of positive free space
 - like flex factor for `flex-basis: 0` in Flex Layout
 - if sum of flexible lengths is smaller than 1 uses only that fraction of positive free space instead of everything, i.e. positive free space is left over
-- beware: use only flexible lengths >= 1 to always guarantee that 100% of free space is distributed ⚠️
+- beware: use only flexible lengths &geq; 1 to always guarantee that 100% of free space is distributed ⚠️
 - beware: uses `<flex>` for `<length>` with only `fr` unit, although not a separate data type ❗️
 - beware: only used in Grid Layout (as of August 2020) ❗️
 
@@ -216,7 +216,7 @@ tags:
 
 ## Angle
 
-- `<angle>` < `<dimension>` < data type
+- `<angle>` &lt; `<dimension>` &lt; data type
 - number with a unit of dimension angle
 - units: `deg`, `rad`, `grad`, `turn`
 - for direction is bearing angle, i.e. `0 deg` is up, `90 deg` is right, etc.
@@ -225,7 +225,7 @@ tags:
 
 ## Time
 
-- `<time>` < `<dimension>` < data type
+- `<time>` &lt; `<dimension>` &lt; data type
 - number with a unit of dimension time
 - units: `s`, `ms`
 
@@ -233,7 +233,7 @@ tags:
 
 ## Frequency
 
-- `<frequency>` < `<dimension>` < data type
+- `<frequency>` &lt; `<dimension>` &lt; data type
 - number with a unit of dimension frequency
 - units: `Hz`, `kHz`
 
@@ -241,7 +241,7 @@ tags:
 
 ## Resolution
 
-- `<resolution>` < `<dimension>` < data type
+- `<resolution>` &lt; `<dimension>` &lt; data type
 - number with a unit of dimension resolution
 - units: `dpi`, `dpcm`, `dppx`
 - `dpi` and `dppx` have the same relationship as `in` and `px` ❗️
@@ -253,7 +253,7 @@ tags:
 
 <!-- ToDo: finish, see css-colors -->
 
-- `<color>` < data type
+- `<color>` &lt; data type
 
 keywords, 140 predefined color names, e.g. `tomato`, `orange`, etc.
 Hexadecimal RGB values, Each pair of values represents one of the channels — red, green and blue
@@ -269,17 +269,17 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 ### RGB (Red, Green, Blue)
 
 - intensity of colors red, green, blue from 0 to 255, black if r = g = b = 0, white if r = g = b = 255, grey if r = g = b for any other value
-- `rgb(r g b)` for 0 <= r, g, b <= 255 in decimal
-- `#(r g b)` for 00 <= r, g, b <= ff in hexadecimal
-- `rgb(r g b a)` for additional 0 <= a <= 1 transparency
+- `rgb(r g b)` for 0 &leq; r, g, b &leq; 255 in decimal
+- `#(r g b)` for 00 &leq; r, g, b &leq; ff in hexadecimal
+- `rgb(r g b a)` for additional 0 &leq; a &leq; 1 transparency
 
 ### HSL (Hue, Sturation, Lightness)
 
 - hue: degree on color wheel, from 0 to 360, red is 0, green is 120, blue is 240
 - saturation: intensity of color, from 0% to 100%, grey to full color
 - lightness: lightness of color, from 0% to 100%, black to white
-- `hsl(h s l)` for 0 <= h <= 360, 0% <= s,l <= 100%
-- `hsl(h s l a)` for additional 0 <= a <= 1 transparenty
+- `hsl(h s l)` for 0 &leq; h &leq; 360, 0% &leq; s,l &leq; 100%
+- `hsl(h s l a)` for additional 0 &leq; a &leq; 1 transparenty
 
 
 
@@ -287,7 +287,7 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 
 <!-- ToDo: finish, see css-image -->
 
-- `<image>` < data type
+- `<image>` &lt; data type
 `<gradient>` is special `<image>` data type, e.g can use as `background-image`
 <!-- OLD
 `URL('…')`, `linear-gradient()`, `radial-gradient()` -->
@@ -296,7 +296,7 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 
 ## Position
 
-- `<position>` < data type
+- `<position>` &lt; data type
 - derived data type
 - 2D coordinate in a positioning area
 - axes: x-axis to right, y-axis to bottom

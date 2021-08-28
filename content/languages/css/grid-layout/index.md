@@ -106,7 +106,7 @@ tags:
 - space-separated list of track sizes
 - beware: leave out line names here for clarity, see Named grid lines
 
-```css
+```
 /* breadth values */
 <flexible-breadth>       = <length-percentage> | <flex> | min-content | max-content | auto
 <inflexible-breadth>     = <length-percentage> | min-content | max-content | auto

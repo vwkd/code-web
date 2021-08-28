@@ -48,14 +48,14 @@ tags:
 - specify lower bound for size property, i.e. becomes size if size property falls below it
 - physical: `min-width`, `min-height`
 - logical: (`min-block-size`, `min-inline-size`, see Writing Mode
-- beware: minimum size overrides maximum size if maximum size <= minimum size, no matter if where size is in the inequality, e.g. size <= maximum size <= minimum size, maximum size <= size <= minimum size, or maximum size <= minimum size <= size, i.e. minimum size is always applied ⚠️
+- beware: minimum size overrides maximum size if maximum size &leq; minimum size, no matter if where size is in the inequality, e.g. size &leq; maximum size &leq; minimum size, maximum size &leq; size &leq; minimum size, or maximum size &leq; minimum size &leq; size, i.e. minimum size is always applied ⚠️
 
 ### Maximum size
 
 - specify upper bound for size property, i.e. becomes size if size property grows above it
 - physical: `max-width`, `max-height`
 - logical: `max-block-size`, `max-inline-size`, see Writing Mode
-- beware: minimum size wins over maximum size if maximum size <= minimum size, minimum size is always applied, no matter what size is, e.g. size <= maximum size <= minimum size, maximum size <= size <= minimum size, or maximum size <= minimum size <= size ⚠️
+- beware: minimum size wins over maximum size if maximum size &leq; minimum size, minimum size is always applied, no matter what size is, e.g. size &leq; maximum size &leq; minimum size, maximum size &leq; size &leq; minimum size, or maximum size &leq; minimum size &leq; size ⚠️
 
 
 
@@ -93,7 +93,7 @@ tags:
 
 - minimum size of content box such that contents don't overflow given infinite available space
 - can think of as "ideal" preferred size
-- beware: `min-content` <= `max-content` ❗️
+- beware: `min-content` &leq; `max-content` ❗️
 - adapts to content, i.e. zero if empty element ❗️
 
 ### `stretch`

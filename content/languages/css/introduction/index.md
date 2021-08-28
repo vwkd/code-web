@@ -382,12 +382,12 @@ p {
 1. Sort declarations by origin and importance, apply only most specific
     - origins of stylesheet: user agent, user, author
     - importance of declaration: `!important` after property value
-    - order: user agent < user < author < author `!important` < user `!important` < user agent `!important`
-    - author order: ex-/internal < inline
+    - order: user agent &lt; user &lt; author &lt; author `!important` &lt; user `!important` &lt; user agent `!important`
+    - author order: ex-/internal &lt; inline
     - if declarations have same origin and importance, go to 3.
 2. Sort declarations by selector specificity, apply only most specific
     - specificity: weight of a compound selector, determined by types of constituent selectors
-    - order: (pseudo-)element < (pseudo-)class, attribute < ID
+    - order: (pseudo-)element &lt; (pseudo-)class, attribute &lt; ID
     - order of constituent selectors doesn't matter, just quantity of each
     - universal selector, combinators, negation pseudo-class have no specificity
     - if declarations have same selector specificity, go to 4.
@@ -398,7 +398,7 @@ p {
 - selector order doesn't matter for specificity, just quantity of selectors, e.g.  
   `body p` ≙ `main p`, `.myclass#myid` ≙ `#myid.myclass`
 - can artificially increase selector specificity by chaining same ID or class, e.g.  
-  `p.myclass` < `p.myclass.myclass` < `p#myid` < `p#myid.myclass` < `p#myid#myid`  
+  `p.myclass` &lt; `p.myclass.myclass` &lt; `p#myid` &lt; `p#myid.myclass` &lt; `p#myid#myid`  
 - use least specific selector, so can overwrite easily later
 - use least amount of selectors, so can overwrite easily later and reuse rule for multiple elements
 - don't use `!important`, behaves as if from style sheet of higher origin, not affected by selector specificity or order of appearance, can't be overwritten by non-important declarations
