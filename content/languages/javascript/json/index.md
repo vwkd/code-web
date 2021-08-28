@@ -1,15 +1,10 @@
 ---
-title: JSON
+title: JSON (JavaScript Object Notation)
 author: vwkd
 index: 12
 tags:
   - javascript
 ---
-## JSON (JavaScript Object Notation)
-
-
-
-## Introduction
 
 - format for text
 - used to transmit data between different programs

@@ -5,11 +5,6 @@ index: 6.3
 tags:
   - css
 ---
-# Float Layout
-
-
-
-## Introduction
 
 - an irregular layout, can be used with regular Flow Layout
 - beware: has no effect if parent FC is not flow FC ⚠️

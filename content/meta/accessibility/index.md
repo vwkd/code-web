@@ -5,13 +5,8 @@ index: 5
 tags:
   - meta
 ---
-# Accessibility
 
 <!-- ToDo: Finish -->
-
-
-
-## Introduction
 
 ??
 

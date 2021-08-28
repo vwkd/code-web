@@ -5,11 +5,6 @@ index: 3
 tags:
   - meta
 ---
-# Testing
-
-
-
-## Introduction
 
 - assert expected outcome of implementation on sample data
 - warns from regression, changes break existing features, can confidently make changes

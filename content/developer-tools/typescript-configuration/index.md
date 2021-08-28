@@ -5,9 +5,6 @@ index: 4
 tags:
   - developer-tools
 ---
-# TypeScript configuration
-
-
 
 ## Installation
 

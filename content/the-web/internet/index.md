@@ -5,9 +5,6 @@ index: 2
 tags:
   - the-web
 ---
-# Internet
-
-
 
 ## Internet protocol suite
 

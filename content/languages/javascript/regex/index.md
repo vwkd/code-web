@@ -1,17 +1,11 @@
 ---
-title: Regex
+title: Regular expressions (Regex)
 author: vwkd
 index: 8
 tags:
   - javascript
 ---
-# Regular expressions (Regex)
 
-
-
-## Introduction
-
-- regular expressions
 - search pattern
 - matches characters in a string
 

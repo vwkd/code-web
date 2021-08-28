@@ -5,7 +5,6 @@ index: 1
 tags:
   - javascript
 ---
-# JavaScript
 
 <!-- todo: finish -->
 <!-- todo: remove (with ES6) notes, because are not complete at all
@@ -21,17 +20,6 @@ https://2ality.com/2019/12/ecmascript-2020.html
 https://2ality.com/2020/09/ecmascript-2021.html
  -->
 <!-- todo: note that doesn't cover everything, just basics -->
-
-
-
-## Introduction
-
-- scripting language for the Web browser, i.e. Web browser is runtime environment
-- one of the most popular programming language in the world, almost every computer has a JavaScript runtime environment (Web browser)
-- beware: nowadays can also use on server, for desktop OS itself, like a modern shell, e.g. Deno, Node, etc. ❗️
-- part of a Web page, sandboxed to that page
-
-
 
 ## ECMAScript (ES)
 

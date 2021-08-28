@@ -5,9 +5,6 @@ index: 1
 tags:
   - meta
 ---
-# Programming Principles
-
-
 
 ## Purpose of code
 

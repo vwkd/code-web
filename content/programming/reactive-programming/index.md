@@ -5,11 +5,6 @@ index: 3.2
 tags:
   - programming
 ---
-# Reactive Programming
-
-
-
-## Introduction
 
 - a declarative programming paradigm
 - abstracts away time of computer, code specifies state of program for any point in time, not discrete temporal sequence of steps how its executed

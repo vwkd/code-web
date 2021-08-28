@@ -5,8 +5,6 @@ index: 15
 tags:
   - the-web
 ---
-# Attacks
-
 
 <!-- todo: finish reading
 
@@ -14,8 +12,6 @@ https://en.wikipedia.org/wiki/Cross-site_request_forgery#Cookie-to-header_token
 https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#encryption-based-token-pattern
 https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
  -->
-
-## Introduction
 
 - techniques to exploit vulnerabilities in websites
 

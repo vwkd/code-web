@@ -5,11 +5,8 @@ index: 2
 tags:
   - javascript
 ---
-# Basics
 
 <!-- todo: consider removing all console.log() statements, also in all subsequent files, because is Web API -->
-
-
 
 ## Syntax
 

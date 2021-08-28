@@ -1,17 +1,12 @@
 ---
-title: SSG
+title: Static site generator (SSG)
 author: vwkd
 index: 2
 tags:
   - developer-tools
 ---
-# Static site generator (SSG)
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
 
 - HTML template compiler
 - creates static server-side rendered website

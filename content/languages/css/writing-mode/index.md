@@ -5,11 +5,6 @@ index: 9
 tags:
   - css
 ---
-# Writing mode
-
-
-
-## Introduction
 
 - writing orientation: orientation of a line, e.g. horizontal or vertical
 - line directionality: direction in which lines progress on a page, perpendicular to writing orientation, e.g. top-to-bottom or bottom-to-top, left-to-right or right-to-left

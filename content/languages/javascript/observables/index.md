@@ -5,13 +5,8 @@ index: 13
 tags:
   - javascript
 ---
-# Observables
 
 <!-- ToDo: Revisit if included by spec -->
-
-
-
-## Introduction
 
 - a better Events API
 - beware: as of May 2020 not part of official spec, need to use third-party library, implementations might vary, e.g. ReactiveX with RxJS ⚠️

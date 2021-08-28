@@ -1,15 +1,10 @@
 ---
-title: World Wide Web
+title: World Wide Web (WWW)
 author: vwkd
 index: 3
 tags:
   - the-web
 ---
-# World Wide Web (WWW)
-
-
-
-## Introduction
 
 - universal space of information
 - an application on the Internet

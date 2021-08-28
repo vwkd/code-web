@@ -5,16 +5,11 @@ index: 6
 tags:
   - css
 ---
-# Flow Layout
 
 <!-- ToDo: revisit once css-flow is written, https://www.w3.org/TR/css-box-4/#intro -->
 <!-- ToDo: use flow container and flow item terminology, also in other modules
 - beware: often refers to specific kind "block-level" or "inline-level" directly rather than "flow item" ❗️
 -->
-
-
-
-## Introduction
 
 - a regular layout, for documents
 - default layout, see Layout#Display_type

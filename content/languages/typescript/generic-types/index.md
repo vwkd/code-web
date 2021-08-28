@@ -5,11 +5,6 @@ index: 7
 tags:
   - typescript
 ---
-# Generic Types
-
-
-
-## Introduction
 
 - type variables that are used in place of specific types
 - used to specify relationship between types without needing to know actual types

@@ -5,9 +5,6 @@ index: 9
 tags:
   - javascript
 ---
-# Iterators and Generators
-
-
 
 ## Iterator
 

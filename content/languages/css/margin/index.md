@@ -5,11 +5,6 @@ index: 6.1
 tags:
   - css
 ---
-# Margin
-
-
-
-## Introduction
 
 - transparent area of box outside of border
 - spaces box from other boxes in Flow Layout

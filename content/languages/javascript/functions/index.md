@@ -5,11 +5,6 @@ index: 4
 tags:
   - javascript
 ---
-# Functions
-
-
-
-## Introduction
 
 - special objects: callable, additional `prototype` property, constructor of a function is `Function`, inherits some properties
 - can have properties and methods like any other object

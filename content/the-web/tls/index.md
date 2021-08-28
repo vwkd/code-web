@@ -1,15 +1,10 @@
 ---
-title: TLS
+title: Transport Layer Security (TLS)
 author: vwkd
 index: 6
 tags:
   - the-web
 ---
-# Transport Layer Security (TLS)
-
-
-
-## Introduction
 
 (see also beforehand [Encryption 101](../Other/Encryption%20101.md))
 

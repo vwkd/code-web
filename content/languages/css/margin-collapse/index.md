@@ -5,11 +5,6 @@ index: 6.2
 tags:
   - css
 ---
-# Margin Collapse
-
-
-
-## Introduction
 
 - historic bug of Flow Layout
 - not in other regular layouts, e.g. Flexbox Layout, Grid Layout, etc.

@@ -1,15 +1,10 @@
 ---
-title: DOM API
+title: Document Object Model (DOM) API
 author: vwkd
 index: 3
 tags:
   - web-apis
 ---
-# Document Object Model (DOM) API
-
-
-
-## Introduction
 
 - API to interact with a markup document, e.g. HTML, to change content, structure and styling programmatically
 - language independent, but mainly used with JS

@@ -1,19 +1,19 @@
 ---
-title: Introduction
+title: Koa
 author: vwkd
-index: 2
+index: 3
 tags:
-  - koa
+  - web-frameworks
 ---
-# Koa
 
-
-
-## Introduction
-
-- web framework by team behind Express, close to Express syntax
+- web framework
+- by team behind Express, close to Express syntax
 - minimal, doesn't bundle any middleware, e.g. router
 - modern and expressive, uses async functions, better middleware pipeline flow, better error handling
+
+
+
+## Hello World Example
 
 ```javascript
 const Koa = require('koa');

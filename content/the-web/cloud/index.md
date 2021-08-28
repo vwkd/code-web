@@ -5,13 +5,8 @@ index: 10
 tags:
   - the-web
 ---
-# Cloud
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
 
 - on-demand shared computer resources
 - on network of remote servers on the Internet

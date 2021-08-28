@@ -1,17 +1,12 @@
 ---
-title: ARIA attributes
+title: Accessible Rich Internet Applications (ARIA) attributes
 author: vwkd
 index: 8
 tags:
   - html
 ---
-# Accessible Rich Internet Applications (ARIA) attributes
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
 
 set of attributes
 ??

@@ -5,11 +5,6 @@ index: 8
 tags:
   - css
 ---
-# Stacking
-
-
-
-## Introduction
 
 - needs third axis since positioned elements can overlap
 - 3D coordinate system, x-axis to right, y-axis to bottom, z-axis out of screen, origin in top left corner of screen

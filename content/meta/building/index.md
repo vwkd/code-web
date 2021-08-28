@@ -5,13 +5,8 @@ index: 2
 tags:
   - meta
 ---
-# Building
 
 <!-- ToDo: Finish -->
-
-
-
-## Introduction
 
 - step by step, build up gradually and continuously
 - release early, release often, use tight feedback loop, maintain always bug free

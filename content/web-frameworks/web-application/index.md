@@ -5,11 +5,8 @@ index: 2
 tags:
   - web-frameworks
 ---
-# Web application
 
-
-
-## Introduction
+## Web application
 
 - dynamic website that behaves like a native application
 

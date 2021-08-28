@@ -5,11 +5,6 @@ index: 8
 tags:
   - typescript
 ---
-# Type operators
-
-
-
-## Introduction
 
 - type guard: operator that can narrow down types, e.g. `in`, `typeof`, `instanceof`, comparison operators, truthiness, etc.  
   beware: TS doesn't yet handle coercion, e.g. `==` might fail [#37251](https://github.com/microsoft/TypeScript/issues/37251)

@@ -5,11 +5,6 @@ index: 4
 tags:
   - css
 ---
-# Box
-
-
-
-## Introduction
 
 - visual representation of element in a document
 - every element is represented as one (principal) box

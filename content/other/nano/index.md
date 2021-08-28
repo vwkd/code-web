@@ -5,11 +5,6 @@ index: 3
 tags:
   - other
 ---
-# Nano
-
-
-
-## Introduction
 
 - simple text editor for command line
 - macOS ships with it by default, but old version, might not support all keyboard shortcuts below, e.g. Undo, Redo, Save without prompt

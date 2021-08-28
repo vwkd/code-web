@@ -5,11 +5,6 @@ index: 5
 tags:
   - javascript
 ---
-# Arrays
-
-
-
-## Introduction
 
 - ordered set of values, indexed collection
 - special objects with dynamic length property, constructor is `Array`

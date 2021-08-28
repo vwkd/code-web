@@ -5,11 +5,6 @@ index: 3
 tags:
   - programming
 ---
-# Programming Paradigm
-
-
-
-## Introduction
 
 - fundamental style of language
 - can increase maintainability, minimize area where bugs can occur, e.g. through better readability, modularity, etc.

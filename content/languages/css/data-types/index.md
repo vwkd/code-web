@@ -5,13 +5,8 @@ index: 2
 tags:
   - css
 ---
-# Data Types
 
 <!-- ToDo: add more functions besides url(), e.g. min(), max(), clamp() which are like min/max-width for any property -->
-
-
-
-## Introduction
 
 - set of values, groups "similar" ones
 - notation similar to HTML element, e.g. `<string>`, `<number>`, `<color>`, `<image>`, etc. ❗️

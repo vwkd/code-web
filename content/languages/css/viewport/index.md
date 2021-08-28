@@ -5,11 +5,6 @@ index: 3
 tags:
   - css
 ---
-# Viewport
-
-
-
-## Introduction
 
 - visible area where document is rendered, i.e. user agent window excluding menu bar, etc.
 - not affected by overlay controls, e.g. scrollbars, on-screen keyboard, etc.

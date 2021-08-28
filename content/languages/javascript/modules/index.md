@@ -5,11 +5,6 @@ index: 11
 tags:
   - javascript
 ---
-# Modules
-
-
-
-## Introduction
 
 - encapsulation of data with controlled visibility and access 
 - used to organise data, bundle related code

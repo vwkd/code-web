@@ -5,7 +5,6 @@ index: 10
 tags:
   - javascript
 ---
-# Asynchrony
 
 <!-- todo: finish -->
 <!-- todo: read
@@ -14,10 +13,6 @@ https://www.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-
 
 https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide
  -->
-
-
-
-## Introduction
 
 - concurrent asynchrony
 - async operations are created using Promises or Web APIs

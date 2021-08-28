@@ -1,15 +1,10 @@
 ---
-title: BOM API
+title: Browser Object Model (BOM) API
 author: vwkd
 index: 2
 tags:
   - web-apis
 ---
-# Browser Object Model (BOM) API
-
-
-
-## Introduction
 
 - API to interact with a Web browser window
 - not standardized, implementation can differ between browsers

@@ -5,11 +5,6 @@ index: 6
 tags:
   - developer-tools
 ---
-# Prettier configuration
-
-
-
-## Introduction
 
 - code formatter
 - few options, easy to set up

@@ -5,19 +5,8 @@ index: 1
 tags:
   - web-frameworks
 ---
-# Web frameworks
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
-
-- frameworks for website
-- more declarative
-- beware: many names for same thing, e.g. for client-side "front-end frameworks", "MV* frameworks", for server-side "back-end frameworks", "application frameworks", etc. ❗️
-
-
 
 ## Client-side
 

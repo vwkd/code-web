@@ -5,11 +5,6 @@ index: 2
 tags:
   - html
 ---
-# Elements
-
-
-
-## Introduction
 
 - use semantic elements as often as possible
 - always think about accessibility for every part of web page, e.g. blind person, deaf person, etc.

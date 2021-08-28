@@ -5,9 +5,6 @@ index: 6
 tags:
   - javascript
 ---
-## Keyed collections
-
-
 
 ## `Map` object type
 

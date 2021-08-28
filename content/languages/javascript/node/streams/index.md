@@ -5,17 +5,6 @@ index: 4
 tags:
   - node
 ---
-# Streams
-
-
-
-## Motivation
-
-Imagine doing all homework once on a single day or spacing it out over multiple days, the latter has less mental stress because works only on a part of the homework, also can present teacher the completed parts already before finished the rest, can quit homework early if teacher doesn't want it anymore, or can do other homework in meantime if teacher is running late on seeing it through, i.e. doing an operation repeatedly on smaller chunks is better than doing a single operation on everything
-
-
-
-## Introduction
 
 - sequence of data chunks of I/O, e.g. video stream from YouTube
 - operate on one chunk at a time instead of whole data
@@ -25,6 +14,12 @@ Imagine doing all homework once on a single day or spacing it out over multiple 
 - with streams: data is partially buffered, data is treated in separate smaller data chunks, memory and time efficient
 - can think about stream as gardenhose from tap into bucket, can chain multiple gardenhoses together, can even modify content while it is passing
 - the difficulty with many chunks instead of a single one comes in form of synchronisation, because needs to wait asynchronously for each chunk to be read / written before can continue, even more difficult when piping multiple streams
+
+
+
+## Motivation
+
+Imagine doing all homework once on a single day or spacing it out over multiple days, the latter has less mental stress because works only on a part of the homework, also can present teacher the completed parts already before finished the rest, can quit homework early if teacher doesn't want it anymore, or can do other homework in meantime if teacher is running late on seeing it through, i.e. doing an operation repeatedly on smaller chunks is better than doing a single operation on everything
 
 
 

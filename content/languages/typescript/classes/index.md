@@ -5,11 +5,6 @@ index: 5
 tags:
   - typescript
 ---
-# Classes
-
-
-
-## Introduction
 
 - class fields (≙ instance properties) types are declared outside of constructor, matches syntax of classical languages, not needed for inherited properties
 

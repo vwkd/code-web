@@ -5,13 +5,8 @@ index: 7
 tags:
   - html
 ---
-# Link
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
 
 ???
 in `<head>`

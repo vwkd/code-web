@@ -5,11 +5,6 @@ index: 4.6
 tags:
   - css
 ---
-# Outline
-
-
-
-## Introduction
 
 - like border around border box
 - not part of box, doesn't affect layout or size ❗️

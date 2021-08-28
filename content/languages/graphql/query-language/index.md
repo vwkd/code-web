@@ -5,11 +5,6 @@ index: 2
 tags:
   - graphql
 ---
-# Query language
-
-
-
-## Introduction
 
 - language for retrieval (and modification) of information
 - beware: "query" is overloaded as synonym for "operation" or "request", is actually one specific operation ⚠️

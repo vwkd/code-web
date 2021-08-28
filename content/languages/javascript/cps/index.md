@@ -1,15 +1,10 @@
 ---
-title: CPS
+title: Continuation Pasing Style (CPS)
 author: vwkd
 index: 10.1
 tags:
   - javascript
 ---
-# Continuation Pasing Style (CPS)
-
-
-
-## Introduction
 
 - passes handler as callback argument
 - by convention first argument of callback is for errors

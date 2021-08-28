@@ -5,11 +5,6 @@ index: 4.1
 tags:
   - css
 ---
-# Padding
-
-
-
-## Introduction
 
 - transparent area between content and border
 - spaces content from border

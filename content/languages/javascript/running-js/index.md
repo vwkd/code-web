@@ -5,9 +5,6 @@ index: 1.1
 tags:
   - javascript
 ---
-# Running JS
-
-
 
 ## REPL (read–eval–print loop)
 
@@ -16,6 +13,9 @@ tags:
 
 
 ## Types of client-side JS
+
+- part of a Web page, sandboxed to that page
+- file extension `.js`
 
 ### External 👍
 

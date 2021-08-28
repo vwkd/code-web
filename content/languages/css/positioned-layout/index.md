@@ -5,11 +5,6 @@ index: 7
 tags:
   - css
 ---
-# Positioned Layout
-
-
-
-## Introduction
 
 - an irregular layout, can be used with any regular layout
 - can use to position element anywhere on page, no matter regular layout of parent

@@ -1,13 +1,10 @@
 ---
-title: Encryption 
+title: Encryption 101 
 author: vwkd
 index: 2
 tags:
   - other
 ---
-# Encryption 101
-
-
 
 ## Terminology
 

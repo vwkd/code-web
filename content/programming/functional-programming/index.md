@@ -5,13 +5,8 @@ index: 3.1
 tags:
   - programming
 ---
-# Functional Programming
 
 <!-- ToDo: FINISH -->
-
-
-
-## Introduction
 
 - a declarative programming paradigm
 - computation as the evaluation of mathematical functions

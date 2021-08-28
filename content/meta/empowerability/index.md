@@ -5,11 +5,6 @@ index: 4
 tags:
   - meta
 ---
-# Empowerability
-
-
-
-## Introduction
 
 - minimise work by client, e.g. waiting, data use, battery drain, etc.
 

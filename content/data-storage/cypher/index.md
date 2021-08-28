@@ -5,22 +5,19 @@ index: 4
 tags:
   - data-storage
 ---
-# Cypher
 
 <!-- ToDo: Finish -->
 
-
-
-## Introduction
-
 - query language for Neo4j
 - matches pattern
+
 
 
 ## Syntax
 
 - see Neo4j
 - e.g. `(:Person) -[:LIVES_IN]-> (:City) -[:PART_OF]-> (:Country)`
+
 
 
 ## Clauses

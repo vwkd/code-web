@@ -5,9 +5,6 @@ index: 5
 tags:
   - html
 ---
-# Input
-
-
 
 ## `<form>`
 

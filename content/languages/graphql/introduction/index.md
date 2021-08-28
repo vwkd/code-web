@@ -5,17 +5,6 @@ index: 1
 tags:
   - graphql
 ---
-# Introduction
-
-
-
-## GraphQL
-
-- API query language and IDL
-- API query language is designed for JSON responses
-- IDL makes documentation first-class, e.g. via introspection
-
-
 
 ## Document
 

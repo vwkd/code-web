@@ -5,11 +5,6 @@ index: 7
 tags:
   - the-web
 ---
-# HTTP Server
-
-
-
-## Introduction
 
 - handle requests from client and send appropriate responses
 - basically a complex series of if statements to figure out what to do for any given request

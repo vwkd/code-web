@@ -5,11 +5,6 @@ index: 8
 tags:
   - the-web
 ---
-# HTTP API
-
-
-
-## Introduction
 
 - API for operations on resources on the Internet, e.g. CRUD (Create, Read, Update, Delete)
 - often require authentication, see Auth

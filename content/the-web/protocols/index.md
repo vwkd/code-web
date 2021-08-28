@@ -5,11 +5,6 @@ index: 1
 tags:
   - the-web
 ---
-# Protocols
-
-
-
-## Introduction
 
 - set of rules that define how data is being exchanged via a given medium
 - defines data format, address format, transmission, reception, error handling, etc.

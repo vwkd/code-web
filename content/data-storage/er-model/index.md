@@ -1,15 +1,10 @@
 ---
-title: ER model
+title: Entity-relationship model (ER model)
 author: vwkd
 index: 1
 tags:
   - data-storage
 ---
-# Entity-relationship model (ER model)
-
-
-
-## Introduction
 
 - models data as entities and relationships
 - closer to real world than other models ???

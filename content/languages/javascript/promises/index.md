@@ -5,11 +5,6 @@ index: 10.2
 tags:
   - javascript
 ---
-# Promises
-
-
-
-## Introduction
 
 - special object that manages callbacks (with ES6)
 - can think of like a box that will contain a value in the future, will notify callback when that value arrives

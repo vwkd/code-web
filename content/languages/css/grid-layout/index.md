@@ -5,15 +5,10 @@ index: 11
 tags:
   - css
 ---
-# Grid Layout
 
 <!-- todo: remove unnecessary "grid" fillerword, e.g. explicit ~grid~ track -->
 <!-- todo: add example code for almost everything -->
 <!-- ToDo: update to Level 2 with subgrid -->
-
-
-
-## Introduction
 
 - a regular layout, for applications
 - two-dimensional layout since uses grid, for one-dimensional layout see Flex Layout

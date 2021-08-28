@@ -5,11 +5,8 @@ index: 3
 tags:
   - graphql
 ---
-# IDL
 
-
-
-## Introduction
+<!-- todo: finish -->
 
 - defines API, e.g. supported operations, fields, directives, etc.
 - ??? uses type system

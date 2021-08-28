@@ -5,9 +5,6 @@ index: 1
 tags:
   - developer-tools
 ---
-# Terminology
-
-
 
 ## Compiler
 

@@ -5,9 +5,6 @@ index: 6
 tags:
   - html
 ---
-# Media
-
-
 
 ## Single source: `<img>`
 

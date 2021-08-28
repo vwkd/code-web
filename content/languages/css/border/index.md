@@ -5,11 +5,6 @@ index: 4.2
 tags:
   - css
 ---
-# Border
-
-
-
-## Introduction
 
 - painted area outside of padding
 - drawn above background

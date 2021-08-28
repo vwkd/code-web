@@ -5,11 +5,6 @@ index: 7
 tags:
   - javascript
 ---
-# Strings
-
-
-
-## Introduction
 
 - primitive values, constructor `String` wraps around to make them behave like objects, inherits some properties, see Data types as objects
 - immutable array-like objects, can not change characters

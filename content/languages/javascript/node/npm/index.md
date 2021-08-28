@@ -1,15 +1,10 @@
 ---
-title: NPM
+title: Node Package Manager (NPM)
 author: vwkd
 index: 2
 tags:
   - node
 ---
-# Node Package Manager (NPM)
-
-
-
-## Introduction
 
 - package manager for JavaScript packages
 - default package manager for Node.js runtime environment

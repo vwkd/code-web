@@ -5,11 +5,6 @@ index: 3
 tags:
   - node
 ---
-# Events
-
-
-
-## Introduction
 
 - events work differently than in browser
 - events are triggered manually, no browser window that magically triggers events through interaction

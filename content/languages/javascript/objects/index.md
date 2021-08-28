@@ -5,12 +5,8 @@ index: 3
 tags:
   - javascript
 ---
-# Objects
 
-
-
-## Motivation
-
+- collection of key-value pairs, called "properties", properties are like variables, object is like a container for multiple variables
 - every data type in JS is either an object, e.g. arrays, functions, objects, or behaves like an object, e.g. strings, numbers, booleans  
   -> needs to understand objects to understand JS
 - inheritance is the distinct feature of objects in comparison to other data types
@@ -18,9 +14,8 @@ tags:
 
 
 
-## Introduction
+## Basics
 
-- collection of key-value pairs, called "properties", properties are like variables, object is like a container for multiple variables
 - property names can be of data type `String` or `Symbol`
 - property values can be of any data type including object, function, array, etc.  
   -> can build nested data structures of arbitrary complexity

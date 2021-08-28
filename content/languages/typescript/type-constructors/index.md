@@ -5,11 +5,6 @@ index: 6
 tags:
   - typescript
 ---
-# Type constructors
-
-
-
-## Introduction
 
 - create custom types out of basic types
 

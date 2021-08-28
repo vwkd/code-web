@@ -5,11 +5,6 @@ index: 10.4
 tags:
   - javascript
 ---
-# Patterns
-
-
-
-## Introduction
 
 - has async operations and handler
 - can have dependent or independent ops, can have single handler or separate

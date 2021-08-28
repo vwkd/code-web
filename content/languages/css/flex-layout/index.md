@@ -5,11 +5,6 @@ index: 10
 tags:
   - css
 ---
-# Flex Layout
-
-
-
-## Introduction
 
 - a regular layout, for applications
 - one-dimensional layout since uses lines, for two-dimensional layout see Grid Layout

@@ -1,15 +1,10 @@
 ---
-title: Animation API
+title: RequestAnimationFrame API
 author: vwkd
 index: 6
 tags:
   - web-apis
 ---
-# RequestAnimationFrame API
-
-
-
-## Introduction
 
 - API for animations
 - use `setInterval()` / recursive `setTimeout()` if needs specific framerate

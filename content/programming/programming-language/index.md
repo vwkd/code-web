@@ -5,11 +5,6 @@ index: 2
 tags:
   - programming
 ---
-# Programming Language
-
-
-
-## Introduction
 
 - language of code
 - categorised by "level" of program

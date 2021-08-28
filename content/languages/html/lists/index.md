@@ -5,11 +5,6 @@ index: 3
 tags:
   - html
 ---
-# Lists
-
-
-
-## Introduction
 
 - `<ul>`, `<ol>` un/ordered (bullet/number) list
 - `<li>` list item, can contain any type of element, i.e. can nest other list

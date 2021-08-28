@@ -5,13 +5,8 @@ index: 3
 tags:
   - developer-tools
 ---
-# Workflow
 
 <!-- ToDo: finish -->
-
-
-
-## Introduction
 
 - can use a script to call a build tool
 - can have different scripts for development and production

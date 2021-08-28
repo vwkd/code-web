@@ -5,7 +5,6 @@ index: 1
 tags:
   - programming
 ---
-# Terminology
 
 <!-- todo: reorder better -->
 

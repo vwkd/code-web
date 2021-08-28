@@ -5,11 +5,6 @@ index: 4
 tags:
   - graphql
 ---
-# Pagination
-
-
-
-## Introduction
 
 - splitting list into chunks
 - beware: "page" is historical term where chunks were used for book-like pages, think Google

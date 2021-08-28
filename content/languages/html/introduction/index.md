@@ -5,17 +5,11 @@ index: 1
 tags:
   - html
 ---
-# Introduction
 
+## Syntax
 
-
-## HTML (Hypertext Markup Language)
-
-- standard markup language of documents on the Web
-- describes _structure_ of Web page and _meaning_ of content
-- for _appearance_ see CSS, for _behavior_ see JavaScript, e.g. bold text because of emphasis (HTML) or because of style (CSS), image because of content (HTML) or because of decoration (CSS), etc.
-- file extension `.html`
 - whitespace is collapsed to single space, like in LaTeX, i.e. line breaks, indentation etc. just for readability
+- file extension `.html`
 
 
 

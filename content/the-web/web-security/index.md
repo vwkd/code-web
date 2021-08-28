@@ -5,11 +5,6 @@ index: 14
 tags:
   - the-web
 ---
-# Web security
-
-
-
-## Introduction
 
 - measures to make a website secure
 - beware: most security measures are useless without HTTPS, since data can be manipulated in transit ❗️

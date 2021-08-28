@@ -5,11 +5,6 @@ index: 5
 tags:
   - css
 ---
-# Layout
-
-
-
-## Introduction
 
 - arrangement of boxes
 - affects size and position of box

@@ -5,11 +5,6 @@ index: 4.5
 tags:
   - css
 ---
-# Shadow
-
-
-
-## Introduction
 
 - drop-shadow(s) on box
 - not part of box, doesn't affect layout or size ❗️

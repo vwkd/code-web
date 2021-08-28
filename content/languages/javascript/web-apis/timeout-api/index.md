@@ -5,11 +5,6 @@ index: 5
 tags:
   - web-apis
 ---
-# Timeout API
-
-
-
-## Introduction
 
 - API for delays
 - for animation use rAF instead

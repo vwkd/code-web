@@ -5,7 +5,6 @@ index: 1
 tags:
   - web-apis
 ---
-# Introduction
 
 <!-- todo: mention to read 8. Asynchronicity first -->
 <!-- todo: mention some are old CPS API instead of Promises
@@ -13,16 +12,9 @@ tags:
 newer Web APIs use promises, e.g. Fetch API, Battery API, Service Worker API
 -->
 
-
-
-## Introduction
-
-- set of APIs for Web browser
-- allows to create side effects, e.g. log to console, use network, manipulate Web page, etc.
-- often constrained by security measures, e.g. permission request, URLs must be HTTPs, etc.
-- beware: don't confuse with HTTP APIs, should have been named "Browser APIs" ❗️
 - usually provided as JS objects with properties and methods, the constructor is called "interface"
 - legacy Web APIs used CPS, modern Web APIs use promises
+- often constrained by security measures, e.g. permission request, URLs must be HTTPs, etc.
 
 
 

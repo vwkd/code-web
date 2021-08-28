@@ -5,11 +5,6 @@ index: 5
 tags:
   - developer-tools
 ---
-# ESLint configuration
-
-
-
-## Introduction
 
 - most powerful linter for JavaScript
 - scans source code, shows syntax errors, style convention errors, structural errors

@@ -5,11 +5,6 @@ index: 4
 tags:
   - other
 ---
-# Matrix
-
-
-
-## Introduction
 
 - information synchronisation system on the Internet
 - decentralised object database, eventually consistent

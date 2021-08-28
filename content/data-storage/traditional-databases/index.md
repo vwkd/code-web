@@ -5,12 +5,6 @@ index: 2
 tags:
   - data-storage
 ---
-# Traditional databases
-
-
-
-## Introduction
-
 
 - all are bad at storing connected data
 - treat relationships as second-class, not explicit

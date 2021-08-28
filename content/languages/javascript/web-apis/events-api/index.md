@@ -5,13 +5,8 @@ index: 4
 tags:
   - web-apis
 ---
-# Events API
 
 <!-- todo: finish -->
-
-
-
-## Introduction
 
 - API to ???
 

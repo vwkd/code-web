@@ -1,15 +1,10 @@
 ---
-title: URL
+title: URL (Uniform Resource Locator)
 author: vwkd
 index: 4
 tags:
   - the-web
 ---
-# URL (Uniform Resource Locator)
-
-
-
-## Introduction
 
 - unique address of a resource on the Internet, like IP address for single piece of information, e.g. document, song, video, etc.
 - often using domain names to make links more human-readable, although could as well use IP address

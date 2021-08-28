@@ -5,11 +5,6 @@ index: 3
 tags:
   - typescript
 ---
-# Functions
-
-
-
-## Introduction
 
 ```typescript
 function add(x: number, y: number): number {

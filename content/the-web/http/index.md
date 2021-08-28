@@ -1,15 +1,10 @@
 ---
-title: HTTP
+title: Hypertext Transfer Protocol (HTTP)
 author: vwkd
 index: 5
 tags:
   - the-web
 ---
-# Hypertext Transfer Protocol (HTTP)
-
-
-
-## Introduction
 
 - an application layer protocol to transmit files given URL
 - designed to transmit hypertext documents on the Web, but can transmit any file, e.g. can replace SSH, FTP, etc.

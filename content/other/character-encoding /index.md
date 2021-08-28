@@ -1,13 +1,10 @@
 ---
-title: Character Encoding 
+title: Character Encoding 101
 author: vwkd
 index: 1
 tags:
   - other
 ---
-# Character Encoding 101
-
-
 
 ## Why do we need character encoding?
 

@@ -5,11 +5,6 @@ index: 4
 tags:
   - html
 ---
-# Tables
-
-
-
-## Introduction
 
 - `<table>`: table
 - `<tr>`: table row, columns are dynamically created by `<td>`, `<th>`

@@ -5,11 +5,6 @@ index: 11
 tags:
   - the-web
 ---
-# HTTP cookie
-
-
-
-## Introduction
 
 - key value pair stored by UA for a website
 - UA sends cookie for every subsequent request to same website

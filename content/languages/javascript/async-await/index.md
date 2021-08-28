@@ -5,11 +5,6 @@ index: 10.3
 tags:
   - javascript
 ---
-## Async await
-
-
-
-## Introduction
 
 - sugar syntax for combination of generators and promises (with ES2017)
 - solves problems of Promises 🎉

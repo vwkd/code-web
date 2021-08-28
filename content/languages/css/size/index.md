@@ -5,7 +5,6 @@ index: 4.3
 tags:
   - css
 ---
-# Size
 
 <!-- ToDo: revisit once https://www.w3.org/TR/css-sizing-4 has been finished -->
 
@@ -14,10 +13,6 @@ tags:
 <!-- ToDo: clarify values and initial value of min / max properties, e.g. auto min size resolves to 0 mostly, but to min-content in Flex Layout, and in one special case to min-content in Grid Layout -->
 
 <!-- beware: minimum size `auto` value of grid item that is not a scroll container, spans at least one track in that axis whose min track sizing function is `auto` (i.e. if track sizing is `auto`, `minmax(auto,..)`, `<flex>`, `fit-content(..)`), and spans more than one track in that axis of which none are flexible, then it resolves to `min-content` (with some adjustments) instead of zero ⚠️ SEE https://drafts.csswg.org/css-grid/#min-size-auto -->
-
-
-
-## Introduction
 
 - width and height of box, see NFP/Size
 - beware: misused as synonym for the length in single one of the two spacial dimensions, e.g. `block-size`, `inline-size`, etc. ⚠️

@@ -5,9 +5,6 @@ index: 4
 tags:
   - typescript
 ---
-# Type Aliases and Interfaces
-
-
 
 ## Type Aliases
 

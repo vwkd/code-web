@@ -5,11 +5,6 @@ index: 4.4
 tags:
   - css
 ---
-# Background
-
-
-
-## Introduction
 
 - painted layer(s) behind box
 - drawn below border

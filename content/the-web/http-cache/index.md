@@ -5,11 +5,6 @@ index: 12
 tags:
   - the-web
 ---
-# HTTP cache
-
-
-
-## Introduction
 
 - proxy between client and server that serves client stored responses from similar previous requests
 - forwards request it hasn't already seen, stores and forwards response

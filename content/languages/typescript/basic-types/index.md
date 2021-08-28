@@ -5,11 +5,6 @@ index: 2
 tags:
   - typescript
 ---
-# Basic Types
-
-
-
-## Introduction
 
 - type: set of values, set theory
 - type system: rules that assign types to entities of programming language
