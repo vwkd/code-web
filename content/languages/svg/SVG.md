@@ -1,7 +1,5 @@
 # SVG
 
-[TOC]
-
 
 
 ## SVG (Scalable Vector Graphics)

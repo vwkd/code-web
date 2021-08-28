@@ -1,7 +1,5 @@
 # ESLint configuration
 
-[TOC]
-
 
 
 ## Introduction

@@ -1,9 +1,9 @@
 # Notes Style Guide
 
-[TOC]
-
 <!-- ToDo: Enforce Style Guide on existing documents -->
 <!-- ToDo: Find all "see ..." references and link to corresponding location -->
+
+
 
 ## Content
 
@@ -31,8 +31,6 @@
 
 ```markdown
 # Title
-
-[TOC]
 
 
 

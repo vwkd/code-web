@@ -1,7 +1,5 @@
 # Prettier configuration
 
-[TOC]
-
 
 
 ## Introduction

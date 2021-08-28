@@ -1,7 +1,5 @@
 # TypeScript configuration
 
-[TOC]
-
 
 
 ## Installation

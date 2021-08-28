@@ -1,8 +1,8 @@
 # Git Cheat Sheet
 
-[TOC]
-
 <!-- ToDo: finish, rework -->
+
+
 
 ## Notation
 

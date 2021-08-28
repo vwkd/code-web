@@ -1,7 +1,5 @@
 # Git theory
 
-[TOC]
-
 <!-- ToDo: finish, rework with book from Scott Chacon, integrate pictures from /static -->
 
 <!-- todo: incorporate
@@ -66,6 +64,8 @@ gitignore
 difftool (?)
 
  -->
+
+
 
 ## Idea
 

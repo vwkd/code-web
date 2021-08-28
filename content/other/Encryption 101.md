@@ -1,7 +1,5 @@
 # Encryption 101
 
-[TOC]
-
 
 
 ## Terminology

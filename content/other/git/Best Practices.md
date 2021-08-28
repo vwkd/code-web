@@ -1,7 +1,5 @@
 # Git Best Practices
 
-[TOC]
-
 
 
 ## Introduction

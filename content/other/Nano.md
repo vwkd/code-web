@@ -1,7 +1,5 @@
 # Nano
 
-[TOC]
-
 
 
 ## Introduction

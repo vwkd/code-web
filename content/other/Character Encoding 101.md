@@ -1,7 +1,5 @@
 # Character Encoding 101
 
-[TOC]
-
 
 
 ## Why do we need character encoding?

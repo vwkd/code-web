@@ -1,9 +1,8 @@
 # Linux Security
 
-[TOC]
-
-
 <!-- todo: finish -->
+
+
 
 ## Introduction
 
