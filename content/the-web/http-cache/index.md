@@ -164,7 +164,7 @@ tags:
 - beware: if does cache "external" resource risks breakages due to incompatibilities from mixing of new and old versions of interdependent resources ⚠️
 - cache personalised responses at most in private cache, e.g. profile page, etc.
 - beware: never cache personalised responses in public cache, otherwise second client can see response for first ❗️
-- usually caches only responses with certain status codes, e.g. < 500 because server error is not normal
+- usually caches only responses with certain status codes, e.g. &lt; 500 because server error is not normal
 - beware: caching and not caching a resource doesn't correspond to a static / dynamic Web server, e.g. can statically serve a changing resource, can dynamically serve a non-changing resource ❗️
 
 

@@ -105,7 +105,7 @@ Use attributes otherwise
 Use nodes if wants to connect two more than two entities
 Use relationship otherwise
 
-Use fine grained relationships names, checking attributes on target mode is more expensive, e.g. Person located_home Address instead of Person located Address {type: home}
+Use fine grained relationships names, checking attributes on target mode is more expensive, e.g. Person located_home Address instead of Person located Address `{type: home}`
 Eliminates graph travels, faster performance
 Put complex attributes with multiple attributes in own nodes, e.g. Address
 

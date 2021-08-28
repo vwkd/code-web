@@ -33,7 +33,7 @@ tags:
 - diagram of entity types with their attribute types and their relationship types, usually drawn as boxes and lines
 - beware: the diagram is drawn for the abstract types, it really "exists" only for the concrete instances ❗️
 
-![Person entity type and "has" relationship to Birthday entity type](er1.svg)
+![Person entity type and 'has' relationship to Birthday entity type](er1.svg)
 
 - can think of entity types as nouns and relationship types as verbs, e.g. person owns car, car is owned by person
 - beware: a relationship label can be read in one direction only, the other direction is obtained by turning the verb into passive voice
@@ -53,15 +53,15 @@ tags:
 - always combines two symbols, the inner component represents the minimum, the outer component represents the maximum, from the point of view of the given entity
 - makes only sense for the following combinations: the symbol `||` means exactly one, `o{` means zero or more, and `|{` means one or more, for cardinality from left entity to right
 
-![Person entity type and "has" relationship to Birthday entity type with cardinality one](er2.svg)
+![Person entity type and 'has' relationship to Birthday entity type with cardinality one](er2.svg)
 
-![Person entity type and "has" relationship to Book entity type with cardinality zero or more](er3.svg)
+![Person entity type and 'has' relationship to Book entity type with cardinality zero or more](er3.svg)
 
 - beware: if wants to be able to version the data, needs to keep the cardinality of a relationship at one and have many duplicated entities with the same content, instead of having a single entity that many otherwise unrelated entities link to, e.g. `Person ||has|| Birthday`, `Person ||has|| Age`, `Person ||has|| Address`, `Person ||has|| Nationality`, instead of `}|has||` or `Person ||has|{ Book` instead of `}|has|{` etc. ⚠️
 
-![Person entity type and "has" relationship to Birthday entity type with cardinality one but reverse zero or more](er2bad.svg)
+![Person entity type and 'has' relationship to Birthday entity type with cardinality one but reverse zero or more](er2bad.svg)
 
-![Person entity type and "has" relationship to Book entity type with cardinality zero or more but reverse also zero or more](er3bad.svg)
+![Person entity type and 'has' relationship to Book entity type with cardinality zero or more but reverse also zero or more](er3bad.svg)
 
 
 
