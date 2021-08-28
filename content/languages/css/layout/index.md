@@ -69,7 +69,7 @@ tags:
 - each box is positioned according to parent FC, constrained by content area of establishing box
 - beware: box can still overflow establishing box due to size constraints, see Size ❗️
 
-![nested FCs](static/fc.svg)
+![nested FCs](fc.svg)
 
 - nested FCs build a FC tree similar to box tree
 - beware: a FC only applies to direct children, each child establishes its own FC for its children, etc. ❗️

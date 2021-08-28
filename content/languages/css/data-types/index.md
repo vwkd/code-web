@@ -306,7 +306,7 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 - axes: x-axis to right, y-axis to bottom
 - canonical origin in top left corner
 
-![canonical coordinate system in positioning area](static/poscs.svg)
+![canonical coordinate system in positioning area](poscs.svg)
 
 - offset: `<length>` or `<percentage>`
 - offsets are x/y-coordinates
@@ -321,12 +321,12 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 
 | value | coordinate | possible coordinates |
 | - | - | - | - |
-| keyword | x or y, other defaults to `center` | ![five points of a cross](static/pos1k.svg) |
-| offset | x, y defaults to `center` | ![horizontal line in center](static/pos1o.svg) |
-| keyword keyword | x y or y x | ![each cross point](static/pos2kk.svg) |
-| keyword offset | x y | ![vertical lines on left, center and right](static/pos2ko.svg) |
-| offset keyword | x y | ![horizontal lines on top, center and bottom](static/pos2ok.svg) |
-| offset offset | x y | ![every point](static/pos2oo.svg) |
+| keyword | x or y, other defaults to `center` | ![five points of a cross](pos1k.svg) |
+| offset | x, y defaults to `center` | ![horizontal line in center](pos1o.svg) |
+| keyword keyword | x y or y x | ![each cross point](pos2kk.svg) |
+| keyword offset | x y | ![vertical lines on left, center and right](pos2ko.svg) |
+| offset keyword | x y | ![horizontal lines on top, center and bottom](pos2ok.svg) |
+| offset offset | x y | ![every point](pos2oo.svg) |
 
 - beware: only for "keyword keyword" the order doesn't matter, can set "x y" or "y x", for other values is always "x y", e.g. `50% left` is invalid ❗️
 
@@ -337,13 +337,13 @@ beware: `rgb()` and `hsl()` support legacy comma notation, don't use anymore ❗
 
 | value | coordinate | possible coordinates |
 | - | - | - | - |
-| keyword offset keyword offset | x y or y x | ![every point](static/pos4koko.svg) |
+| keyword offset keyword offset | x y or y x | ![every point](pos4koko.svg) |
 
 - beware: meaning of "x y" (and "y x") change depending on origin ❗️
 - beware: order doesn't matter, can set "x y" or "y x", always two possibilities ❗️
 - canonical origin is `left offset top offset` (or `top offset left offset`), others are non-canonical
 
-![all four coordinate systems in positioning area](static/poscs4.svg)
+![all four coordinate systems in positioning area](poscs4.svg)
 
 - beware: not really useful, just moves origin of coordinate system, nothing that can't specify with canonical origin ❗️
 - beware: `4 * 2 = 8` equivalent values for same position, from four different origins, each in normal or reverse order ❗️
@@ -363,14 +363,14 @@ position: 75% 75%;
         : bottom 25% left 75%;
 ```
 
-![point in center of fourth quadrant of positioning area](static/pos4kokoex.svg)
+![point in center of fourth quadrant of positioning area](pos4kokoex.svg)
 
 ### Positioned area
 
 - coordinate can be used to position a whole area
 - positioned area is moved such that coordinate is at same position in positioned area as it's in positioning area, e.g. coordinate `(0%,0%)` positions top left of area in top left of coordinate system, `(100%, 100%)` positions bottom right of area in bottom right of coordinate system, `(50%, 50%)` positions center of area in center of coordinate system, etc.
 
-![positioned area in positioning area](static/posarea.svg)
+![positioned area in positioning area](posarea.svg)
 
 - beware: if positioned area has same size as positioning area, needs to use absolute offsets since percentages have no effect ❗️
 - beware: if positioned area is bigger than positioning area, needs to use negative offsets for same effect ❗️

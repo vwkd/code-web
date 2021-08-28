@@ -28,7 +28,7 @@ tags:
 
 - rectangular content area with optional padding, border, and margin areas
 
-![box](static/box.svg)
+![box](box.svg)
 
 - can think of box as consisting of four nested sub-boxes, i.e. content box, padding box, border box, and margin box
 - content area contains the elements content, e.g. text, image, descendant elements, etc.  

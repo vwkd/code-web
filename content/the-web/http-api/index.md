@@ -26,7 +26,7 @@ tags:
   - a (sub-)resource is like a node in the tree, e.g. user X, name of user X, email of user X, etc.
   - a combination of (sub-)resources is like a set of nodes in the tree, e.g. user X and user Y, name and email of user X, name of user X and email of user Y, etc.
 
-![tree of a users resource with two user subresource with each a name and an email subresource](static/apitree.svg)
+![tree of a users resource with two user subresource with each a name and an email subresource](apitree.svg)
 
 
 

@@ -41,7 +41,7 @@ tags:
 - boxes are fit height to content
 - boxes can be custom sized, see [Size](4.1%20Size.md)
 
-![block layout](static/flowbl.svg)
+![block layout](flowbl.svg)
 
 - vertical distance between sibling boxes controlled by padding, border and margin properties
 - horizontal distance to edge of FC controlled by padding, border and margin properties
@@ -61,7 +61,7 @@ tags:
 - boxes are fit height to content
 - boxes can't be custom sized, see [Size](4.1%20Size.md)
 
-![inline layout](static/flowil.svg)
+![inline layout](flowil.svg)
 
 - vertical distance between boxes controlled by line height and vertical alignment, not by margin, boder and padding properties
 - beware: vertical margins don't have any effect ⚠️
@@ -112,7 +112,7 @@ beware: only in block FC, not in inline FC, since boxes are contained in inline-
 - controlled using ODT of element, see ODT
 - additional helper boxes are generated for certain ODTs
 
-![flow formattign context](static/flowfc.svg)
+![flow formattign context](flowfc.svg)
 
 - beware: if box has different `writing-mode` than its parent, IDT `flow` computes to `flow-root` ❗️
 
@@ -158,13 +158,13 @@ beware: only in block FC, not in inline FC, since boxes are contained in inline-
 - if parent ODT is block, anonymous block-level wrapper box is generated, wraps all sibling inline-level boxes
 - line boxes in wrapper box
 
-![inline-level box in block-level box](static/flowblil.svg)
+![inline-level box in block-level box](flowblil.svg)
 
 - if parent ODT is inline, no additional boxes
 - no additional line boxes, parent forms the line for children
 - parent box is sized to fit content
 
-![inline-level box in inline-level box](static/flowilil.svg)
+![inline-level box in inline-level box](flowilil.svg)
 
 - beware: in flow FC border of children overlap border of parent box, like with line box, not in flow-root FC ❗️
 
@@ -173,7 +173,7 @@ beware: only in block FC, not in inline FC, since boxes are contained in inline-
 - if parent ODT is block, no additional boxes
 - same for flow and flow-root FC
 
-![block-level box in block-level box](static/flowblbl.svg)
+![block-level box in block-level box](flowblbl.svg)
 
 - if parent ODT is inline, no additional boxes
 - in flow FC "breaks out" of own FC into closest ancestor flow FC in flow FC chain with a block-level establishing box
@@ -181,13 +181,13 @@ beware: only in block FC, not in inline FC, since boxes are contained in inline-
 - historic bug, breaks assumption that a box only "sees" the FC it's in
 - can change by making parent FC flow-root, i.e. parent box inline-block, see Flow-root FC
 
-![block-level box in inline-level box](static/flowilbl.svg)
+![block-level box in inline-level box](flowilbl.svg)
 
 beware: diagram assumes grandparent box is block-level, flow FC chain could be longer with multiple inline-level boxes in between ❗️
 
 - in flow-root FC doesn't break out, parent box is "inline-block" box
 
-![inline-block box](static/flowilblroot.svg)
+![inline-block box](flowilblroot.svg)
 
 
 

@@ -44,7 +44,7 @@ tags:
 - defines transmission of concrete files between two specific ports, e.g. potential encryption, data format, etc.
 - usually stateful
 
-![The four layers of the Internet protocol suite](static/iplayers.svg)
+![The four layers of the Internet protocol suite](iplayers.svg)
 
 ### End-to-end principle
 

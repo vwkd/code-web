@@ -407,7 +407,7 @@ car1.color;                   // "black", from prototype chain
 
 - there can be various prototype chains, all ending at `null`, see later
 
-![prototype chain - first simple picture](static/opcfirst.svg)
+![prototype chain - first simple picture](opcfirst.svg)
 
 - problem 1: by default the `[[prototype]]` properties of the objects are not chained to each other, would need to set it for each single object
 - problem 2: changing the `[[prototype]]` property of an object is very inefficient operation, should not be done manually
@@ -429,12 +429,12 @@ const car2 = new Car("Toyota", "Corolla", 1995);  // via constructor
 const car2 = new car1.constructor(/*...*/);       // via instance, same result
 ```
 
-![protoype chain - second closer picture](static/opcsecond.svg)
+![protoype chain - second closer picture](opcsecond.svg)
 
 - by default a function's `prototype` property is linked to the `prototype` property of `Object` which is linked to `null`, see later how can change `prototype` property of constructors for multi-level inheritance
 - object literals have their `[[prototype]]` property directly set to `Object.prototype`
 
-![protoype chain - third complete picture](static/opcthird.svg)
+![protoype chain - third complete picture](opcthird.svg)
 
 ### Summary
 
@@ -581,7 +581,7 @@ sportsCar1.honk(); // "Hooonk", from Car.prototype
 sportsCar1.scream(); // "Brummm", from SportsCar.prototype
 ```
 
-![protoype chain - fourth multi-level picture](static/opcfourth.svg)
+![protoype chain - fourth multi-level picture](opcfourth.svg)
 
 - accessing properties may go up the prototype chain, but `this` points back at instance, is rooted at call site, can reuse methods no matter where they are on the prototype chain, i.e. this-aware methods on prototype chain work as if they were on instance
 

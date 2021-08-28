@@ -111,7 +111,7 @@ tags:
 - `min(max-content, max(min-content, stretch))`
 - adapts to content and context
 
-![size of box for each size value for different amounts of available space](static/sizeval.svg)
+![size of box for each size value for different amounts of available space](sizeval.svg)
 
 
 

@@ -37,12 +37,12 @@ tags:
 - establishing box itself is at origin of own z-axis, i.e. always behind descendant boxes
 - ordering is similar to Flexbox Layout, each flex container creates own x-axis, children are ordered on it according to their Visual order
 
-![flex formatting context on x-axis](static/scx.svg)
+![flex formatting context on x-axis](scx.svg)
 
 - beware: diagram uses integers ascending from 1, but can use arbitrary integers with same relative order, e.g. sequence `1, 2, 3` is equivalent to `-17, 5, 22` ❗️
 - beware: diagram has separate FC for each box, not true for SC anymore ❗️
 
-![stacking contexts on z-axis](static/scz.svg)
+![stacking contexts on z-axis](scz.svg)
 
 - beware: in diagram vertical lines are boxes, reduced by one spacial dimension as seen along either the x- or y-axis, since diagram is two dimensional can only draw either x- or y-axis instead of both ❗️
 - beware: in diagram each box establishes an SC, not necessarily true ❗️

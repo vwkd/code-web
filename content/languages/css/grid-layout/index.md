@@ -25,23 +25,23 @@ tags:
 
 - grid line: horizontal or vertical line
 
-![grid line](static/gridline.svg)
+![grid line](gridline.svg)
 
 - grid: set of intersecting grid lines
 
-![grid](static/grid.svg)
+![grid](grid.svg)
 
 - grid track: space between two adjacent grid lines, defines columns and rows
 
-![grid track](static/gridtrack.svg)
+![grid track](gridtrack.svg)
 
 - grid cell: intersection of a row and a column
 
-![grid cell](static/gridcell.svg)
+![grid cell](gridcell.svg)
 
 - grid area: rectangular set of adjacent grid cells
 
-![grid area](static/gridarea.svg)
+![grid area](gridarea.svg)
 
 - beware: grid area is not a distinct feature of the grid, just a term for certain sets of grid cells ❗️
 

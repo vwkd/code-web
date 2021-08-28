@@ -45,7 +45,7 @@ tags:
 - line boxes see float, are shortened, makes content flow around the float
 - beware: float overlaps everything except content in line box, e.g. background, border, etc. ❗️
 
-![two floats within block layout](static/float.svg)
+![two floats within block layout](float.svg)
 
 ```html
 <div class="float">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -84,7 +84,7 @@ p {
 - beware: `clear` goes on element that floats around float, not on float itself ❗️
 - beware: clears only preceeding floats not following floats, since floats dont't affect preceding boxes ❗️
 
-![two cleared floats within block layout](static/floatclear.svg)
+![two cleared floats within block layout](floatclear.svg)
 
 ```html
 <div class="float">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
@@ -117,7 +117,7 @@ p {
 - values: `none` (default), `both`, `left` / `right` (physical), `inline-start` / `inline-end` (logical, see Writing Mode)
 - beware: clearing single side useful only if floats on both side with opposite side larger than cleared side ❗️
 
-![two cleared floats within block layout](static/floatclearsides.svg)
+![two cleared floats within block layout](floatclearsides.svg)
 
 
 
