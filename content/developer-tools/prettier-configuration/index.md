@@ -35,3 +35,43 @@ tags:
 - if `eslint` is used before formatting with Prettier, add `"prettier"` in `"extends"` in `.eslintrc.json`, also `"prettier/@typescript-eslint"` if typescript is installed
 
 <!-- ToDo: Markdown 3 spaces between second level header -->
+
+
+
+## Example
+
+- `prettierrc.json`
+
+```json
+{
+  "printWidth": 100,
+  "tabWidth": 4,
+  "endOfLine": "lf",
+  "useTabs": false,
+
+  "trailingComma": "none",
+  "semi": true,
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+
+  "proseWrap": "never",
+
+  "overrides": [
+    {
+      "files": ["*.json", "*.md"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
+```
+
+- `prettierignore`
+
+```text
+# Markdown files
+
+*.md
+```
