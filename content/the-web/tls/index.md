@@ -6,7 +6,7 @@ tags:
   - the-web
 ---
 
-(see also beforehand [Encryption 101](../Other/Encryption%20101.md))
+(see also beforehand [Encryption 101](../../other/encryption/index.md))
 
 - an encryption protocol
 - layer between transport layer and application layer

@@ -11,7 +11,7 @@ tags:
 
 - set of values, groups "similar" ones
 - notation similar to HTML element, e.g. `<string>`, `<number>`, `<color>`, `<image>`, etc. ❗️
-- (definition of string, integer, floating-point number similar to JavaScript, see Data Types in [JavaScript Core/Introduction](../JavaScript%20Core/1.%20Introduction.md#Data_Types))
+- (definition of string, integer, floating-point number similar to JavaScript, see Data Types in [JavaScript/Basics](../../javascript/basics/index.md#data-types))
 
 
 

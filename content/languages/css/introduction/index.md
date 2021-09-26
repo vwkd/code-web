@@ -188,9 +188,9 @@ myel:not(last-of-type) {
 | `:nth-of-type(n)` | elements that are _nth of their type_ inside their parents | |
 | `:only-child` | elements that are _only child_ of their parents | |
 | `:only-of-type` | elements that are _only of their type_ inside their parents | |
-| `:any-link` | hyperlinks | see [HTML/Introduction](../HTML/1.%20Introduction.md#Important_elements) for defintion of hyperlink |
-| `:link` | hyperlinks _not yet visited_, i.e. not in user agent history | see [HTML/Introduction](../HTML/1.%20Introduction.md#Important_elements) for defintion of hyperlink |
-| `:visited` | hyperlinks _already visited_, i.e. in user agent history | see [HTML/Introduction](../HTML/1.%20Introduction.md#Important_elements) for defintion of hyperlink |
+| `:any-link` | hyperlinks | see [HTML/Introduction](../../html/introduction/index.md#important-elements) for defintion of hyperlink |
+| `:link` | hyperlinks _not yet visited_, i.e. not in user agent history | see [HTML/Introduction](../../html/introduction/index.md#important-elements) for defintion of hyperlink |
+| `:visited` | hyperlinks _already visited_, i.e. in user agent history | see [HTML/Introduction](../../html/introduction/index.md#important-elements) for defintion of hyperlink |
 | ... | ... |
 
 - beware: `:link`, `:visited`, `:hover`, `:focus`, `:active` overwrite each other, must be in this order to work as expected ❗️

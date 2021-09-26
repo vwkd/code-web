@@ -35,7 +35,7 @@ tags:
 - boxes form a "list"
 - boxes are full width of FC
 - boxes are fit height to content
-- boxes can be custom sized, see [Size](4.1%20Size.md)
+- boxes can be custom sized, see [Size](../size/index.md)
 
 ![block layout](flowbl.svg)
 
@@ -55,7 +55,7 @@ tags:
 <!-- ToDo: fix "when line reached width of FC", line is always full width, only boxes fill line up -->
 - boxes are fit width of content, not full width of FC
 - boxes are fit height to content
-- boxes can't be custom sized, see [Size](4.1%20Size.md)
+- boxes can't be custom sized, see [Size](../size/index.md)
 
 ![inline layout](flowil.svg)
 
