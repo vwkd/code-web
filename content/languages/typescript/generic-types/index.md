@@ -222,6 +222,12 @@ type a = ReturnTypeOrType<typeof sum>; // number
 type b = ReturnTypeOrType<{ name: string }>; // { name: string }
 ```
 
+- element type
+
+```typescript
+type ElementType<T extends Iterable<any>> = T extends Iterable<infer E> ? E : never;
+```
+
 
 
 ## Built-in generic types
