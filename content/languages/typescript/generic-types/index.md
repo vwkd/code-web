@@ -195,7 +195,7 @@ const sortedArr = sortByName(arr); // { name: string; age: number; alive: boolea
 - can constrain type parameter by another type parameter
 
 ```typescript
-function getProperty<T, K extends keyof T>(obj: T, key: K) {
+function getProperty<O, K extends keyof O>(obj: O, key: K): O[K] {
   return obj[key];
 }
 
