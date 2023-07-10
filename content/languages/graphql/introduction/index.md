@@ -23,6 +23,8 @@ ExecutableDefinition:
 
 - beware: differs from spec, spec allows for partial documents and mixes of query language and IDL, here assume document contains either executable operations or single schema, see [#788](https://github.com/graphql/graphql-spec/issues/788#issuecomment-721298885) ⚠️
 
+spec has multiple documents, i.e. grammar has multiple root nodes, doesn't make sense, should just have one root node and say can implement only some of the options, currently this is implcit outside the spec in the word "GraphQL" which might refer to any one of those 4 without further clarification
+
 
 
 ### Grammar

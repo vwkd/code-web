@@ -225,6 +225,8 @@ InputValueDefinition:
     Description* Name : Type DefaultValue* Directives*
 ```
 
+at least one field
+
 - `NamedType` in `ImplementsInterfaces` must be name of an interface, see Abstract types
 - `Type` in `InputValueDefinition` must be an input type, see Input Type
 
@@ -232,6 +234,9 @@ InputValueDefinition:
 #### Abstract types
 
 - interface: abstract object type
+
+??? ~~restricts type hierarchies to a single level~~ can be multiple
+~~no inheritance~~ limited inheritance
 
 ```plaintext
 InterfaceTypeDefinition:
@@ -392,6 +397,10 @@ InputFieldsDefinition:
 
 ## Directive
 
+a way to extend the language
+allow tools to add custom behavior
+to just about any aspect of the type system
+
 ```plaintext
 DirectiveDefinition
     Description* "directive" @ Name ArgumentsDefinition* "on" DirectiveLocations
@@ -413,9 +422,16 @@ TypeSystemDirectiveLocation:
 
 - name of directive must be unique, not start with two underscores since reserved for introspection
 - directive can't use other directive in argument that creates a cyclic reference, e.g. itself
+???
+can mark as `repeatable` to use multiple times
+order matters
 - built-in directives in any schema engine:
     - `@deprecated(reason: String)` on field or enum: marks field or enum value as deprecated in schema
-- beware: currently spec doesn't include `@deprecated` on argument, see [#525](https://github.com/graphql/graphql-spec/pull/525)
+@specifiedBy(url:) url of format of custom scalar
+??? Allows to use same name for multiple different types
+
+
+??? beware: currently spec doesn't include `@deprecated` on argument, see [#525](https://github.com/graphql/graphql-spec/pull/525)
 
 
 

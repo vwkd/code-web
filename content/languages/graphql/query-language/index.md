@@ -456,6 +456,33 @@ query getUser ($showAge: Boolean) {
 - fragment can't use other fragment that creates a cyclic reference, e.g. itself
 
 
+@defer and @stream
+
+for lowering time to response of expensive operations
+client says what isn't as important, what can be sent later, what can be deprioritized
+additional patches get sent over same connection
+?? errors stop the stream
+
+over HTTP multipart response with chunked encoding
+see GraphQL over HTTP spec ?!?!
+
+response object gets `hasNext` property, subsequent responses also a `path` where to apply the patch in previously received data
+
+only on fragment spread or inline fragment
+can use fragment spread with single field
+
+not allowed on root mutation field because would change the order
+
+act as null boundaries, can't bubble up null since already sent previous patches
+sets whole data to null !?!
+also the error then stops the streaming !?!
+
+
+## Subscription
+
+for long running events
+
+
 
 ## Resources
 
