@@ -10,7 +10,7 @@ tags:
 
 - API to modify network requests
 - e.g. block, redirect, etc.
-- declarative rules, JSON
+- declarative rules
 - extension doesn't need to intercept requests
 
 
@@ -43,6 +43,31 @@ defaults to 1 when not set
 #### Condition
 
 condition under which rule is triggered
+
+##### `urlFilter`
+
+##### `regexFilter`
+
+###### Safari
+
+- uses WebKit's restricted Content Extensions regex grammar, not Chrome's RE2 grammar
+- only supports
+  - ASCII literals, escaped literals
+  - character classes, e.g. `[a-z0-9]`, `[^/?#]`
+  - non-/capturing groups, e.g. `(...)`, `(?:...)`
+  - `.`, `?`, `*`, `+`
+  - anchors `^`/`$` as first/last character, e.g. not in group
+- doesn't support anything else, e.g.
+  - non-ASCII literals
+  - alternation, e.g. `|`
+  - general counted repetitions, e.g. `{2}`, `{2, 5}`
+  - shorthand character classes, e.g. `\d`, `\w`, `\s`, `\b`
+  - lookaround, e.g. `(?=...)`, `(?!...)`, `(?<=...)`, `(?<!...)`
+  - anchors `^`/`$` not as first/last character, e.g. in group
+  - inline modifiers, e.g. `(?i)`
+  - named backreferences
+  - etc.
+- see https://github.com/w3c/webextensions/issues/344
 
 #### Action
 
@@ -83,25 +108,53 @@ has no effect if
 
 rewrites request and/or response headers
 
-### Selection
-Matching precedence
+### Evaluation
 
-1. matching condition
-2. highest priority
-3. action
-  1. `"allow"`
-  2. `"allowAllRequests"`
-  3. `"block"`
-  4. `"upgradeScheme"`
-  5. `"redirect"`
-  6. `"modifyHeaders"`
+#### Before request
 
-if multiple with same action and action has different properties, not well defined
+- condition without `responseHeaders`
+- applies groups in order
 
-between multiple extension, order is
-1. "block"
-2. "redirect", "upgradeScheme"
-3. "allow", "allowAllRequests"
+##### Group 1
+
+- action `allow`, `allowAllRequests`, `block`, `upgradeScheme`, `redirect`
+- applies one matching rule
+- for matching condition, precedence
+
+1. priority
+2. action
+  1. `allow`, `allowAllRequests`, request's frame previously matched an `allowAllRequests` rule of same or higher priority
+  2. `block`
+  3. `upgradeScheme`
+  4. `redirect`
+
+- if still multiple, undefined, i.e. same action with different properties
+- for multiple extensions, precedence
+
+1. action
+  1. `block`
+  2. `redirect,` `upgradeScheme`
+  3. `allow,` `allowAllRequests`
+
+- if still multiple, from most recently installed extension
+
+##### Group 2
+
+- action `modifyHeaders`
+- if higher priority than any matching rule in group 1 with `allow` or `allowAllRequests` action
+- applies all matching rules
+- for matching condition and same header, precedence
+
+1. priority
+
+- if higher priority rule sets or appends to header, applies lower priority rule that appends to it
+- if higher priority rule removes header, doesn't apply any lower priority rules
+- between multiple extensions, from most recently installed extension
+
+##### After response
+
+- condition with `responseHeaders`
+- like before request
 
 
 
@@ -130,6 +183,7 @@ stored in rule files in JSON format, listed in manifest file
 managed using JavaScript while an extension is in use
 - at most 30,000, of those at most 5,000 unsafe
 - extension can add / remove using `updateDynamicRules`
+- beware: one invalid rule aborts the complete update!
 
 ### Session
 
@@ -137,6 +191,7 @@ managed using JavaScript while an extension is in use
 managed using JavaScript while an extension is in use
 - at most 5,000
 - extension can add / remove using `updateSessionRules`
+- beware: one invalid rule aborts the complete update!
 
 
 
