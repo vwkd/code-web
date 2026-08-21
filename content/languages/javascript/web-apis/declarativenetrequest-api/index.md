@@ -12,41 +12,53 @@ tags:
 - e.g. block, redirect, etc.
 - declarative rules
 - extension doesn't need to intercept requests
+? can't modify restricted browser requests and requests made by another extensions
 
 
 
 ## Rule
 
-Block a network request.
-Upgrade the schema (http to https).
-Prevent a request from getting blocked by negating any matching blocked rules.
-Redirect a network request.
-Modify request or response headers.
-
 ### Fields
 
 #### ID
 
-unique identifier of rule within ruleset
-mandatory
->= 1
+- identifier of rule
+- positive integer
+- mandatory
+- must be unique within ruleset
 
 #### Priority
 
-rule priority
->= 1
-defaults to 1
-
-positive integer
-defaults to 1 when not set
+- priority of rule
+- positive integer
+- defaults to `1`
 
 #### Condition
 
-condition under which rule is triggered
+- condition when rule matches request
 
 ##### `urlFilter`
 
+- pattern matching the network request URL
+- can't use with `regexFilter`
+- defaults to all
+- (optional) left or domain name anchor + pattern + (optional) right anchor
+- `*` : wildcard, matches any number of characters
+- `|` : left/right anchor, at beginning/end specifies beginning/end of URL
+- `||` : domain name anchor, at beginning specifies start of a (sub-)domain of the URL
+- `^` : separator character, matches any single character except letter, digit, `_`, `-`, `.`, or `%.`, at end also matches end of URL
+- can't use `||*` at beginning, instead use `*`
+- must be ASCII
+- note: use URL-encoding for special characters
+- note: use Punycode for internationalized domains
+
 ##### `regexFilter`
+
+- regular expression matching the network request URL
+- can't use with `urlFilter`
+- must be ASCII
+- note: use URL-encoding for special characters
+- note: use Punycode for internationalized domains
 
 ###### Safari
 
@@ -69,44 +81,100 @@ condition under which rule is triggered
   - etc.
 - see https://github.com/w3c/webextensions/issues/344
 
+##### `isUrlFilterCaseSensitive`
+
+- whether `urlFilter` / `regexFilter` is case sensitive
+- defaults to `false`
+
+##### `requestDomains`
+
+- domains of request
+- defaults to any
+- must be lowercase ASCII
+- use Punycode for internationalized domains
+- note: includes subdomains
+
+##### `excludedRequestDomains`
+
+- like `requestDomains`, but reverse
+- takes precedence over `requestDomains`
+
+##### `resourceTypes`
+
+- resource type of request
+- `main_frame`: top-level document, loaded in tab
+- `sub_frame`: document, loaded in iframe or frame
+- ...
+- if `excludedResourceTypes` isn't specified, defaults to anything except `main_frame`
+- if action is `allowAllRequests`, mandatory and can only include `main_frame` and `sub_frame`
+
+##### `excludedResourceTypes`
+
+- like `resourceTypes`, but reverse
+- takes precedence over `resourceTypes`
+
+##### `initiatorDomains`
+
+- domains from which request originates
+- defaults to any
+- must be lowercase ASCII
+- use Punycode for internationalized domains
+- note: includes subdomains
+
+##### `excludedInitiatorDomains`
+
+- like `initiatorDomains`, but reverse
+- takes precedence over `initiatorDomains`
+
 #### Action
 
-action to take when the rule is matched
+- action of rule
 
-block a network request
-redirect a network request
-modify headers from a network request
-prevent another matching rule from being applied
+##### `type`
 
-##### `allow`
+- type of action
 
-allow the request
-used ignore other matching rules
+###### `allow`
 
-##### `allowAllRequests`
+- ignore other matching block/redirect rules
+
+###### `allowAllRequests`
+
+- like `allow`, but also any other requests in frame hierarchy
+also applies to future subresource loads in the document (including descendant frames) generated from the request
 
 for main_frame and sub_frame resourceTypes only
-same as `"allow"` but also applies to future subresource loads in the document (including descendant frames) generated from the request
 
-##### `block`
+###### `block`
 
-cancels the request
+- block request
 
-##### `upgradeScheme`
+###### `upgradeScheme`
 
-upgrades the scheme of the request
+- upgrade schema of request
+- i.e. http, ftp to https
+
+###### `redirect`
+
+- redirect request
+
+? redirected request is evaluated again
+  source matching and destination/initiator exclusions must prevent loops
+
+###### `modifyHeaders`
+
+- change request and/or response headers
 
 ##### `redirect`
 
-redirects the request
-
-has no effect if
-  - action does not change the request ?? MEANS SAME URL
-  - invalid redirect URL, e.g. `regexSubstitution`
-
-##### `modifyHeaders`
-
-rewrites request and/or response headers
+- target of redirect
+- only if `redirect` action
+- not applied if
+  - doesn't change request ?? MEANS SAME URL
+  - invalid redirect URL
+- `url`: redirect URL, no JavaScript URL
+- `transform`: redirect URL component transformations
+- `regexSubstitution`: substitution pattern for first match of `regexFilter`
 
 ### Evaluation
 
@@ -168,30 +236,30 @@ rewrites request and/or response headers
 
 ### Static
 
-- persist across sessions, not extension updates
-Packaged, installed, and updated when an extension is installed or upgraded
-stored in rule files in JSON format, listed in manifest file
-- at most 30,000
+- packaged in extension manifest file, at most 100
+  - in `"declarative_net_request.rule_resources"` manifest key
+  - in JSON format
+- extension can enable / disable using `updateEnabledRulesets`, at most 50 at a time
 - silently ignored if invalid
 - beware: make sure are valid!
-- included in extension manifest file using `"declarative_net_request.rule_resources"` manifest key, at most 100
-- extension can enable / disable using `updateEnabledRulesets`, at most 50 at a time
+- persist across sessions, not extension updates
+- at most 30,000
 
 ### Dynamic
 
-- persist across sessions and extension updates
-managed using JavaScript while an extension is in use
-- at most 30,000, of those at most 5,000 unsafe
+- managed using JavaScript while an extension is in use
 - extension can add / remove using `updateDynamicRules`
-- beware: one invalid rule aborts the complete update!
+- beware: one invalid rule aborts entire update!
+- persist across sessions and extension updates
+- at most 30,000, of those at most 5,000 unsafe
 
 ### Session
 
-- don't persist across sessions or extension updates
-managed using JavaScript while an extension is in use
-- at most 5,000
+- managed using JavaScript while an extension is in use
 - extension can add / remove using `updateSessionRules`
-- beware: one invalid rule aborts the complete update!
+- beware: one invalid rule aborts entire update!
+- don't persist across sessions or extension updates
+- at most 5,000
 
 
 
